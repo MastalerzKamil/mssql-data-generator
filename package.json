@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/MastalerzKamil/mssql-data-generator/issues"
   },
-  "homepage": "https://github.com/MastalerzKamil/mssql-data-generator#readme"
+  "homepage": "https://github.com/MastalerzKamil/mssql-data-generator#readme",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "moment": "^2.22.2"
+  }
 }
