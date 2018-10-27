@@ -3,12 +3,12 @@ const RESTARANTS_AMOUNT = 2;
 
 faker.locale = "pl";
 
-function randRestaurantData(id) {
+function randRestaurantData(restaurantId) {
   const randomRestaurant = faker.helpers.createCard(); // random contact card containing many properties
   const city = randomRestaurant.address.city;
   const street = randomRestaurant.address.streetC;
   const zipcode = randomRestaurant.address.zipcode;
-  return [id, city, street, zipcode];
+  return [restaurantId, city, street, zipcode];
 }
 
 function getRestaurants() {
