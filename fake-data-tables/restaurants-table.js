@@ -26,7 +26,7 @@ function writeRestaurantsToCSV() {
   const file = fs.createWriteStream(FILE_PATH);
   const array = getRestaurantsArray();
   array.map(function(v) {
-    const record = v.join(";") + "\n";
+    const record = v.join(",") + "\n";
     file.write(record);
   });
 }
