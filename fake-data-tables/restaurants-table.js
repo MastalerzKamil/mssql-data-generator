@@ -1,7 +1,5 @@
 const faker = require("faker");
-const fs = require("fs");
-const ARRAY_SIZE = 2;
-const FILE_PATH = "restaurants.csv";
+const RESTARANTS_AMOUNT = 2;
 
 faker.locale = "pl";
 
@@ -13,22 +11,16 @@ function randRestaurantData() {
   return [city, street, zipcode];
 }
 
-function getRestaurantsArray() {
+function getRestaurants() {
   const restarantsArray = [];
-  for (var i = 0; i < ARRAY_SIZE; i++) {
+  restarantsArray.push(["Misto", "Adres", "Kod pocztowy"])
+  for (var i = 0; i < RESTARANTS_AMOUNT; i++) {
     const restaurant = randRestaurantData();
     restarantsArray.push(restaurant);
   }
   return restarantsArray;
 }
 
-function writeRestaurantsToCSV() {
-  const file = fs.createWriteStream(FILE_PATH);
-  const array = getRestaurantsArray();
-  array.map(function(v) {
-    const record = v.join(",") + "\n";
-    file.write(record);
-  });
+module.exports = {
+  restaurants: getRestaurants()
 }
-
-writeRestaurantsToCSV();
