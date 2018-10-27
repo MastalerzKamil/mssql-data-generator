@@ -2,7 +2,7 @@ const faker = require("faker");
 const orders = require("./orders.table").orders;
 const utils = require("./../utils");
 
-const ORDERS_AMOUNT = 100000;
+const MEALS_AMOUNT = 100000;
 
 faker.locale = "pl";
 
@@ -13,13 +13,15 @@ function getOrderId() {
 
 function randMeals(mealId) {
   const mealAmount = utils.randomIntFromInterval(1, 15);
-  return [mealId, mealAmount, getOrderId()];
+  var foreignOrderId = mealId % orders.length - 1
+  if (foreignOrderId === 0) foreignOrderId = getOrderId();
+  return [mealId, mealAmount, foreignOrderId];
 }
 
 function getMeals() {
   const mealsArray = [];
   mealsArray.push(["Id", "Ilosc", "Id zamowienia"])
-  for (var i = 1; i <= ORDERS_AMOUNT; i++) {
+  for (var i = 1; i <= MEALS_AMOUNT; i++) {
     const meal = randMeals(i);
     mealsArray.push(meal);
   }
