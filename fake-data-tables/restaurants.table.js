@@ -22,5 +22,6 @@ function getRestaurants() {
 }
 
 module.exports = {
+  csvPath: "./generated-data/restaurants.csv",
   restaurants: getRestaurants()
 }
