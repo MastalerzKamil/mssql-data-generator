@@ -12,5 +12,9 @@ module.exports = {
     } catch (err) {
       console.log("problem with saving to CSV\n" + err);
     }
+  },
+  // min and max included
+  randomIntFromInterval: function (min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 }
