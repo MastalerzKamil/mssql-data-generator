@@ -16,6 +16,10 @@ module.exports = {
   t2PreparationsPath: "generated-data/t2/preparationsT2.csv",
   t1ProductsPath: "generated-data/t1/productsT1.csv",
   t2ProductsPath: "generated-data/t2/productsT2.csv",
+  t1WorkPath: "generated-data/outsite-resources-t1/workT1.csv",
+  t2WorkPath: "generated-data/outsite-resources-t2/workT2.csv",
+  t1SurveyPath: "generated-data/outsite-resources-t1/surveyT1.csv",
+  t2SurveyPath: "generated-data/outsite-resources-t2/surveyT2.csv",
   RESTAURANTS_AMOUNT: 2,
   PREPARATIONS_AMOUNT: 200000,
   ORDERS_AMOUNT: 10000,
@@ -24,4 +28,6 @@ module.exports = {
   MAX_ORDER_NUMBER: 1000,
   MEALS_AMOUNT: 100000,
   COMPLAINTS_AMOUNT: 1000,
+  WORKS_AMOUNT: 20,
+  SURVEY_AMOUNT: 5000,
 }
