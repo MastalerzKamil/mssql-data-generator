@@ -1,1001 +1,1001 @@
 id,Przyczyna,ID Zamówienia
-1,inne,8616
-2,nieswieze jedzenie,1
-3,zle zapakowane jedzenie,2
-4,nieswieze jedzenie,3
-5,Zbyt dlugi czas oczekiwania,4
-6,Zbyt dlugi czas oczekiwania,5
+1,inne,4253
+2,inne,1
+3,inne,2
+4,Zbyt dlugi czas oczekiwania,3
+5,zle zapakowane jedzenie,4
+6,nieswieze jedzenie,5
 7,Zbyt dlugi czas oczekiwania,6
-8,Zbyt dlugi czas oczekiwania,7
+8,zle zapakowane jedzenie,7
 9,zle zapakowane jedzenie,8
-10,nieswieze jedzenie,9
-11,inne,10
+10,zle zapakowane jedzenie,9
+11,nieswieze jedzenie,10
 12,nieswieze jedzenie,11
-13,nieswieze jedzenie,12
-14,nieswieze jedzenie,13
-15,nieswieze jedzenie,14
-16,zle zapakowane jedzenie,15
-17,Zbyt dlugi czas oczekiwania,16
+13,zle zapakowane jedzenie,12
+14,Zbyt dlugi czas oczekiwania,13
+15,inne,14
+16,Zbyt dlugi czas oczekiwania,15
+17,inne,16
 18,Zbyt dlugi czas oczekiwania,17
-19,inne,18
+19,nieswieze jedzenie,18
 20,nieswieze jedzenie,19
 21,Zbyt dlugi czas oczekiwania,20
-22,Zbyt dlugi czas oczekiwania,21
-23,Zbyt dlugi czas oczekiwania,22
-24,inne,23
+22,nieswieze jedzenie,21
+23,zle zapakowane jedzenie,22
+24,nieswieze jedzenie,23
 25,zle zapakowane jedzenie,24
 26,Zbyt dlugi czas oczekiwania,25
-27,inne,26
-28,zle zapakowane jedzenie,27
+27,nieswieze jedzenie,26
+28,Zbyt dlugi czas oczekiwania,27
 29,inne,28
-30,Zbyt dlugi czas oczekiwania,29
-31,Zbyt dlugi czas oczekiwania,30
-32,nieswieze jedzenie,31
-33,zle zapakowane jedzenie,32
-34,inne,33
+30,inne,29
+31,nieswieze jedzenie,30
+32,inne,31
+33,nieswieze jedzenie,32
+34,nieswieze jedzenie,33
 35,Zbyt dlugi czas oczekiwania,34
-36,zle zapakowane jedzenie,35
-37,Zbyt dlugi czas oczekiwania,36
-38,nieswieze jedzenie,37
-39,inne,38
-40,nieswieze jedzenie,39
+36,nieswieze jedzenie,35
+37,inne,36
+38,Zbyt dlugi czas oczekiwania,37
+39,zle zapakowane jedzenie,38
+40,inne,39
 41,nieswieze jedzenie,40
 42,inne,41
-43,Zbyt dlugi czas oczekiwania,42
-44,Zbyt dlugi czas oczekiwania,43
+43,nieswieze jedzenie,42
+44,nieswieze jedzenie,43
 45,nieswieze jedzenie,44
-46,nieswieze jedzenie,45
-47,inne,46
-48,zle zapakowane jedzenie,47
-49,nieswieze jedzenie,48
-50,inne,49
-51,nieswieze jedzenie,50
+46,Zbyt dlugi czas oczekiwania,45
+47,Zbyt dlugi czas oczekiwania,46
+48,nieswieze jedzenie,47
+49,inne,48
+50,Zbyt dlugi czas oczekiwania,49
+51,inne,50
 52,nieswieze jedzenie,51
 53,inne,52
-54,zle zapakowane jedzenie,53
+54,Zbyt dlugi czas oczekiwania,53
 55,zle zapakowane jedzenie,54
-56,nieswieze jedzenie,55
-57,inne,56
-58,nieswieze jedzenie,57
-59,Zbyt dlugi czas oczekiwania,58
+56,zle zapakowane jedzenie,55
+57,zle zapakowane jedzenie,56
+58,zle zapakowane jedzenie,57
+59,nieswieze jedzenie,58
 60,zle zapakowane jedzenie,59
-61,nieswieze jedzenie,60
+61,zle zapakowane jedzenie,60
 62,Zbyt dlugi czas oczekiwania,61
-63,nieswieze jedzenie,62
-64,nieswieze jedzenie,63
-65,Zbyt dlugi czas oczekiwania,64
-66,Zbyt dlugi czas oczekiwania,65
-67,inne,66
-68,zle zapakowane jedzenie,67
+63,zle zapakowane jedzenie,62
+64,Zbyt dlugi czas oczekiwania,63
+65,zle zapakowane jedzenie,64
+66,zle zapakowane jedzenie,65
+67,Zbyt dlugi czas oczekiwania,66
+68,inne,67
 69,zle zapakowane jedzenie,68
 70,nieswieze jedzenie,69
-71,nieswieze jedzenie,70
-72,nieswieze jedzenie,71
-73,nieswieze jedzenie,72
-74,Zbyt dlugi czas oczekiwania,73
-75,zle zapakowane jedzenie,74
-76,nieswieze jedzenie,75
+71,Zbyt dlugi czas oczekiwania,70
+72,inne,71
+73,Zbyt dlugi czas oczekiwania,72
+74,zle zapakowane jedzenie,73
+75,nieswieze jedzenie,74
+76,inne,75
 77,inne,76
-78,zle zapakowane jedzenie,77
-79,nieswieze jedzenie,78
-80,inne,79
-81,nieswieze jedzenie,80
-82,Zbyt dlugi czas oczekiwania,81
+78,nieswieze jedzenie,77
+79,zle zapakowane jedzenie,78
+80,Zbyt dlugi czas oczekiwania,79
+81,Zbyt dlugi czas oczekiwania,80
+82,zle zapakowane jedzenie,81
 83,inne,82
-84,zle zapakowane jedzenie,83
-85,Zbyt dlugi czas oczekiwania,84
-86,nieswieze jedzenie,85
+84,inne,83
+85,zle zapakowane jedzenie,84
+86,inne,85
 87,Zbyt dlugi czas oczekiwania,86
-88,zle zapakowane jedzenie,87
-89,inne,88
-90,nieswieze jedzenie,89
-91,inne,90
-92,zle zapakowane jedzenie,91
-93,Zbyt dlugi czas oczekiwania,92
-94,zle zapakowane jedzenie,93
-95,Zbyt dlugi czas oczekiwania,94
-96,inne,95
-97,inne,96
-98,inne,97
+88,inne,87
+89,nieswieze jedzenie,88
+90,Zbyt dlugi czas oczekiwania,89
+91,zle zapakowane jedzenie,90
+92,inne,91
+93,nieswieze jedzenie,92
+94,nieswieze jedzenie,93
+95,inne,94
+96,nieswieze jedzenie,95
+97,zle zapakowane jedzenie,96
+98,zle zapakowane jedzenie,97
 99,inne,98
 100,Zbyt dlugi czas oczekiwania,99
-101,nieswieze jedzenie,100
-102,Zbyt dlugi czas oczekiwania,101
+101,Zbyt dlugi czas oczekiwania,100
+102,zle zapakowane jedzenie,101
 103,Zbyt dlugi czas oczekiwania,102
 104,inne,103
-105,nieswieze jedzenie,104
-106,zle zapakowane jedzenie,105
-107,Zbyt dlugi czas oczekiwania,106
-108,nieswieze jedzenie,107
+105,inne,104
+106,Zbyt dlugi czas oczekiwania,105
+107,zle zapakowane jedzenie,106
+108,inne,107
 109,Zbyt dlugi czas oczekiwania,108
-110,nieswieze jedzenie,109
-111,Zbyt dlugi czas oczekiwania,110
-112,zle zapakowane jedzenie,111
-113,Zbyt dlugi czas oczekiwania,112
+110,Zbyt dlugi czas oczekiwania,109
+111,zle zapakowane jedzenie,110
+112,Zbyt dlugi czas oczekiwania,111
+113,inne,112
 114,Zbyt dlugi czas oczekiwania,113
-115,zle zapakowane jedzenie,114
-116,zle zapakowane jedzenie,115
-117,zle zapakowane jedzenie,116
-118,nieswieze jedzenie,117
-119,inne,118
-120,zle zapakowane jedzenie,119
+115,Zbyt dlugi czas oczekiwania,114
+116,nieswieze jedzenie,115
+117,inne,116
+118,zle zapakowane jedzenie,117
+119,Zbyt dlugi czas oczekiwania,118
+120,nieswieze jedzenie,119
 121,zle zapakowane jedzenie,120
 122,Zbyt dlugi czas oczekiwania,121
-123,zle zapakowane jedzenie,122
-124,Zbyt dlugi czas oczekiwania,123
-125,inne,124
-126,zle zapakowane jedzenie,125
-127,Zbyt dlugi czas oczekiwania,126
+123,inne,122
+124,zle zapakowane jedzenie,123
+125,Zbyt dlugi czas oczekiwania,124
+126,Zbyt dlugi czas oczekiwania,125
+127,nieswieze jedzenie,126
 128,inne,127
 129,zle zapakowane jedzenie,128
-130,inne,129
-131,inne,130
-132,Zbyt dlugi czas oczekiwania,131
-133,inne,132
-134,Zbyt dlugi czas oczekiwania,133
-135,Zbyt dlugi czas oczekiwania,134
-136,nieswieze jedzenie,135
-137,Zbyt dlugi czas oczekiwania,136
-138,zle zapakowane jedzenie,137
-139,inne,138
-140,inne,139
-141,nieswieze jedzenie,140
-142,inne,141
-143,Zbyt dlugi czas oczekiwania,142
-144,Zbyt dlugi czas oczekiwania,143
-145,Zbyt dlugi czas oczekiwania,144
-146,zle zapakowane jedzenie,145
-147,nieswieze jedzenie,146
-148,Zbyt dlugi czas oczekiwania,147
-149,nieswieze jedzenie,148
-150,zle zapakowane jedzenie,149
-151,zle zapakowane jedzenie,150
-152,nieswieze jedzenie,151
-153,zle zapakowane jedzenie,152
-154,zle zapakowane jedzenie,153
-155,nieswieze jedzenie,154
-156,Zbyt dlugi czas oczekiwania,155
-157,zle zapakowane jedzenie,156
-158,inne,157
-159,nieswieze jedzenie,158
-160,inne,159
-161,zle zapakowane jedzenie,160
-162,zle zapakowane jedzenie,161
+130,zle zapakowane jedzenie,129
+131,zle zapakowane jedzenie,130
+132,nieswieze jedzenie,131
+133,zle zapakowane jedzenie,132
+134,nieswieze jedzenie,133
+135,inne,134
+136,Zbyt dlugi czas oczekiwania,135
+137,zle zapakowane jedzenie,136
+138,nieswieze jedzenie,137
+139,nieswieze jedzenie,138
+140,zle zapakowane jedzenie,139
+141,Zbyt dlugi czas oczekiwania,140
+142,nieswieze jedzenie,141
+143,inne,142
+144,nieswieze jedzenie,143
+145,nieswieze jedzenie,144
+146,inne,145
+147,Zbyt dlugi czas oczekiwania,146
+148,inne,147
+149,Zbyt dlugi czas oczekiwania,148
+150,inne,149
+151,inne,150
+152,Zbyt dlugi czas oczekiwania,151
+153,Zbyt dlugi czas oczekiwania,152
+154,Zbyt dlugi czas oczekiwania,153
+155,zle zapakowane jedzenie,154
+156,zle zapakowane jedzenie,155
+157,Zbyt dlugi czas oczekiwania,156
+158,zle zapakowane jedzenie,157
+159,inne,158
+160,Zbyt dlugi czas oczekiwania,159
+161,Zbyt dlugi czas oczekiwania,160
+162,nieswieze jedzenie,161
 163,nieswieze jedzenie,162
-164,nieswieze jedzenie,163
-165,nieswieze jedzenie,164
-166,inne,165
-167,Zbyt dlugi czas oczekiwania,166
-168,Zbyt dlugi czas oczekiwania,167
-169,zle zapakowane jedzenie,168
-170,Zbyt dlugi czas oczekiwania,169
-171,zle zapakowane jedzenie,170
-172,Zbyt dlugi czas oczekiwania,171
+164,Zbyt dlugi czas oczekiwania,163
+165,inne,164
+166,nieswieze jedzenie,165
+167,inne,166
+168,inne,167
+169,nieswieze jedzenie,168
+170,inne,169
+171,inne,170
+172,inne,171
 173,Zbyt dlugi czas oczekiwania,172
-174,Zbyt dlugi czas oczekiwania,173
+174,zle zapakowane jedzenie,173
 175,zle zapakowane jedzenie,174
-176,Zbyt dlugi czas oczekiwania,175
-177,inne,176
-178,zle zapakowane jedzenie,177
-179,Zbyt dlugi czas oczekiwania,178
-180,zle zapakowane jedzenie,179
+176,zle zapakowane jedzenie,175
+177,zle zapakowane jedzenie,176
+178,inne,177
+179,zle zapakowane jedzenie,178
+180,Zbyt dlugi czas oczekiwania,179
 181,zle zapakowane jedzenie,180
 182,Zbyt dlugi czas oczekiwania,181
 183,nieswieze jedzenie,182
-184,inne,183
-185,zle zapakowane jedzenie,184
-186,inne,185
-187,zle zapakowane jedzenie,186
+184,zle zapakowane jedzenie,183
+185,inne,184
+186,nieswieze jedzenie,185
+187,nieswieze jedzenie,186
 188,inne,187
-189,inne,188
-190,inne,189
-191,Zbyt dlugi czas oczekiwania,190
+189,zle zapakowane jedzenie,188
+190,nieswieze jedzenie,189
+191,zle zapakowane jedzenie,190
 192,nieswieze jedzenie,191
-193,inne,192
-194,nieswieze jedzenie,193
-195,nieswieze jedzenie,194
+193,nieswieze jedzenie,192
+194,Zbyt dlugi czas oczekiwania,193
+195,Zbyt dlugi czas oczekiwania,194
 196,zle zapakowane jedzenie,195
-197,Zbyt dlugi czas oczekiwania,196
-198,zle zapakowane jedzenie,197
-199,nieswieze jedzenie,198
-200,Zbyt dlugi czas oczekiwania,199
-201,zle zapakowane jedzenie,200
-202,Zbyt dlugi czas oczekiwania,201
-203,inne,202
-204,nieswieze jedzenie,203
+197,nieswieze jedzenie,196
+198,inne,197
+199,inne,198
+200,zle zapakowane jedzenie,199
+201,nieswieze jedzenie,200
+202,nieswieze jedzenie,201
+203,nieswieze jedzenie,202
+204,zle zapakowane jedzenie,203
 205,nieswieze jedzenie,204
 206,nieswieze jedzenie,205
-207,inne,206
-208,Zbyt dlugi czas oczekiwania,207
-209,Zbyt dlugi czas oczekiwania,208
+207,nieswieze jedzenie,206
+208,inne,207
+209,inne,208
 210,zle zapakowane jedzenie,209
-211,zle zapakowane jedzenie,210
-212,zle zapakowane jedzenie,211
-213,zle zapakowane jedzenie,212
-214,inne,213
-215,nieswieze jedzenie,214
-216,nieswieze jedzenie,215
+211,Zbyt dlugi czas oczekiwania,210
+212,nieswieze jedzenie,211
+213,Zbyt dlugi czas oczekiwania,212
+214,nieswieze jedzenie,213
+215,zle zapakowane jedzenie,214
+216,zle zapakowane jedzenie,215
 217,inne,216
 218,zle zapakowane jedzenie,217
-219,Zbyt dlugi czas oczekiwania,218
+219,inne,218
 220,nieswieze jedzenie,219
-221,Zbyt dlugi czas oczekiwania,220
-222,nieswieze jedzenie,221
-223,inne,222
+221,nieswieze jedzenie,220
+222,zle zapakowane jedzenie,221
+223,zle zapakowane jedzenie,222
 224,inne,223
-225,zle zapakowane jedzenie,224
+225,Zbyt dlugi czas oczekiwania,224
 226,inne,225
 227,zle zapakowane jedzenie,226
-228,Zbyt dlugi czas oczekiwania,227
-229,inne,228
+228,zle zapakowane jedzenie,227
+229,Zbyt dlugi czas oczekiwania,228
 230,inne,229
-231,zle zapakowane jedzenie,230
-232,zle zapakowane jedzenie,231
-233,inne,232
+231,Zbyt dlugi czas oczekiwania,230
+232,inne,231
+233,nieswieze jedzenie,232
 234,nieswieze jedzenie,233
-235,Zbyt dlugi czas oczekiwania,234
-236,zle zapakowane jedzenie,235
+235,inne,234
+236,Zbyt dlugi czas oczekiwania,235
 237,zle zapakowane jedzenie,236
-238,Zbyt dlugi czas oczekiwania,237
-239,zle zapakowane jedzenie,238
-240,inne,239
-241,inne,240
-242,inne,241
-243,Zbyt dlugi czas oczekiwania,242
-244,nieswieze jedzenie,243
-245,inne,244
+238,nieswieze jedzenie,237
+239,Zbyt dlugi czas oczekiwania,238
+240,zle zapakowane jedzenie,239
+241,nieswieze jedzenie,240
+242,Zbyt dlugi czas oczekiwania,241
+243,zle zapakowane jedzenie,242
+244,zle zapakowane jedzenie,243
+245,nieswieze jedzenie,244
 246,zle zapakowane jedzenie,245
-247,zle zapakowane jedzenie,246
+247,inne,246
 248,zle zapakowane jedzenie,247
-249,Zbyt dlugi czas oczekiwania,248
-250,nieswieze jedzenie,249
-251,nieswieze jedzenie,250
+249,nieswieze jedzenie,248
+250,inne,249
+251,Zbyt dlugi czas oczekiwania,250
 252,nieswieze jedzenie,251
-253,zle zapakowane jedzenie,252
-254,zle zapakowane jedzenie,253
+253,inne,252
+254,nieswieze jedzenie,253
 255,zle zapakowane jedzenie,254
-256,inne,255
-257,zle zapakowane jedzenie,256
-258,zle zapakowane jedzenie,257
-259,nieswieze jedzenie,258
+256,zle zapakowane jedzenie,255
+257,inne,256
+258,nieswieze jedzenie,257
+259,inne,258
 260,inne,259
 261,zle zapakowane jedzenie,260
-262,nieswieze jedzenie,261
-263,inne,262
-264,inne,263
-265,zle zapakowane jedzenie,264
-266,inne,265
-267,nieswieze jedzenie,266
-268,Zbyt dlugi czas oczekiwania,267
-269,zle zapakowane jedzenie,268
-270,nieswieze jedzenie,269
+262,zle zapakowane jedzenie,261
+263,zle zapakowane jedzenie,262
+264,Zbyt dlugi czas oczekiwania,263
+265,inne,264
+266,nieswieze jedzenie,265
+267,inne,266
+268,nieswieze jedzenie,267
+269,inne,268
+270,Zbyt dlugi czas oczekiwania,269
 271,Zbyt dlugi czas oczekiwania,270
 272,nieswieze jedzenie,271
-273,inne,272
+273,zle zapakowane jedzenie,272
 274,Zbyt dlugi czas oczekiwania,273
 275,inne,274
-276,inne,275
-277,Zbyt dlugi czas oczekiwania,276
-278,zle zapakowane jedzenie,277
-279,Zbyt dlugi czas oczekiwania,278
+276,zle zapakowane jedzenie,275
+277,zle zapakowane jedzenie,276
+278,nieswieze jedzenie,277
+279,inne,278
 280,nieswieze jedzenie,279
 281,inne,280
-282,nieswieze jedzenie,281
+282,Zbyt dlugi czas oczekiwania,281
 283,inne,282
-284,zle zapakowane jedzenie,283
+284,inne,283
 285,nieswieze jedzenie,284
-286,zle zapakowane jedzenie,285
-287,inne,286
-288,Zbyt dlugi czas oczekiwania,287
-289,zle zapakowane jedzenie,288
-290,zle zapakowane jedzenie,289
-291,nieswieze jedzenie,290
-292,Zbyt dlugi czas oczekiwania,291
-293,Zbyt dlugi czas oczekiwania,292
+286,Zbyt dlugi czas oczekiwania,285
+287,Zbyt dlugi czas oczekiwania,286
+288,inne,287
+289,inne,288
+290,inne,289
+291,zle zapakowane jedzenie,290
+292,zle zapakowane jedzenie,291
+293,nieswieze jedzenie,292
 294,Zbyt dlugi czas oczekiwania,293
-295,nieswieze jedzenie,294
-296,inne,295
+295,inne,294
+296,nieswieze jedzenie,295
 297,inne,296
-298,nieswieze jedzenie,297
-299,nieswieze jedzenie,298
-300,nieswieze jedzenie,299
-301,inne,300
-302,inne,301
-303,zle zapakowane jedzenie,302
-304,zle zapakowane jedzenie,303
+298,inne,297
+299,zle zapakowane jedzenie,298
+300,inne,299
+301,zle zapakowane jedzenie,300
+302,Zbyt dlugi czas oczekiwania,301
+303,Zbyt dlugi czas oczekiwania,302
+304,inne,303
 305,nieswieze jedzenie,304
-306,Zbyt dlugi czas oczekiwania,305
-307,inne,306
+306,zle zapakowane jedzenie,305
+307,nieswieze jedzenie,306
 308,zle zapakowane jedzenie,307
-309,inne,308
-310,nieswieze jedzenie,309
-311,zle zapakowane jedzenie,310
-312,Zbyt dlugi czas oczekiwania,311
-313,zle zapakowane jedzenie,312
-314,zle zapakowane jedzenie,313
-315,Zbyt dlugi czas oczekiwania,314
+309,nieswieze jedzenie,308
+310,Zbyt dlugi czas oczekiwania,309
+311,Zbyt dlugi czas oczekiwania,310
+312,nieswieze jedzenie,311
+313,Zbyt dlugi czas oczekiwania,312
+314,Zbyt dlugi czas oczekiwania,313
+315,zle zapakowane jedzenie,314
 316,Zbyt dlugi czas oczekiwania,315
-317,nieswieze jedzenie,316
+317,inne,316
 318,nieswieze jedzenie,317
 319,zle zapakowane jedzenie,318
-320,Zbyt dlugi czas oczekiwania,319
-321,inne,320
-322,Zbyt dlugi czas oczekiwania,321
-323,zle zapakowane jedzenie,322
-324,nieswieze jedzenie,323
-325,inne,324
+320,zle zapakowane jedzenie,319
+321,zle zapakowane jedzenie,320
+322,inne,321
+323,nieswieze jedzenie,322
+324,inne,323
+325,Zbyt dlugi czas oczekiwania,324
 326,inne,325
-327,inne,326
-328,inne,327
-329,nieswieze jedzenie,328
+327,nieswieze jedzenie,326
+328,zle zapakowane jedzenie,327
+329,inne,328
 330,zle zapakowane jedzenie,329
-331,inne,330
-332,nieswieze jedzenie,331
-333,inne,332
-334,nieswieze jedzenie,333
-335,Zbyt dlugi czas oczekiwania,334
-336,zle zapakowane jedzenie,335
-337,nieswieze jedzenie,336
-338,inne,337
-339,inne,338
+331,Zbyt dlugi czas oczekiwania,330
+332,inne,331
+333,Zbyt dlugi czas oczekiwania,332
+334,inne,333
+335,inne,334
+336,Zbyt dlugi czas oczekiwania,335
+337,Zbyt dlugi czas oczekiwania,336
+338,Zbyt dlugi czas oczekiwania,337
+339,zle zapakowane jedzenie,338
 340,Zbyt dlugi czas oczekiwania,339
-341,inne,340
-342,nieswieze jedzenie,341
-343,nieswieze jedzenie,342
+341,nieswieze jedzenie,340
+342,zle zapakowane jedzenie,341
+343,inne,342
 344,nieswieze jedzenie,343
-345,Zbyt dlugi czas oczekiwania,344
-346,inne,345
-347,zle zapakowane jedzenie,346
-348,zle zapakowane jedzenie,347
-349,zle zapakowane jedzenie,348
-350,inne,349
-351,Zbyt dlugi czas oczekiwania,350
-352,inne,351
-353,inne,352
-354,zle zapakowane jedzenie,353
-355,Zbyt dlugi czas oczekiwania,354
-356,zle zapakowane jedzenie,355
-357,nieswieze jedzenie,356
-358,zle zapakowane jedzenie,357
-359,zle zapakowane jedzenie,358
-360,nieswieze jedzenie,359
-361,inne,360
-362,inne,361
-363,zle zapakowane jedzenie,362
-364,Zbyt dlugi czas oczekiwania,363
-365,Zbyt dlugi czas oczekiwania,364
+345,inne,344
+346,Zbyt dlugi czas oczekiwania,345
+347,inne,346
+348,Zbyt dlugi czas oczekiwania,347
+349,nieswieze jedzenie,348
+350,Zbyt dlugi czas oczekiwania,349
+351,inne,350
+352,nieswieze jedzenie,351
+353,zle zapakowane jedzenie,352
+354,inne,353
+355,inne,354
+356,nieswieze jedzenie,355
+357,Zbyt dlugi czas oczekiwania,356
+358,nieswieze jedzenie,357
+359,Zbyt dlugi czas oczekiwania,358
+360,inne,359
+361,nieswieze jedzenie,360
+362,zle zapakowane jedzenie,361
+363,Zbyt dlugi czas oczekiwania,362
+364,zle zapakowane jedzenie,363
+365,inne,364
 366,inne,365
-367,inne,366
+367,nieswieze jedzenie,366
 368,zle zapakowane jedzenie,367
-369,Zbyt dlugi czas oczekiwania,368
-370,Zbyt dlugi czas oczekiwania,369
-371,zle zapakowane jedzenie,370
-372,Zbyt dlugi czas oczekiwania,371
+369,nieswieze jedzenie,368
+370,nieswieze jedzenie,369
+371,nieswieze jedzenie,370
+372,zle zapakowane jedzenie,371
 373,nieswieze jedzenie,372
-374,inne,373
-375,zle zapakowane jedzenie,374
-376,zle zapakowane jedzenie,375
-377,Zbyt dlugi czas oczekiwania,376
+374,Zbyt dlugi czas oczekiwania,373
+375,inne,374
+376,nieswieze jedzenie,375
+377,nieswieze jedzenie,376
 378,inne,377
-379,Zbyt dlugi czas oczekiwania,378
-380,nieswieze jedzenie,379
-381,nieswieze jedzenie,380
-382,nieswieze jedzenie,381
+379,zle zapakowane jedzenie,378
+380,Zbyt dlugi czas oczekiwania,379
+381,Zbyt dlugi czas oczekiwania,380
+382,zle zapakowane jedzenie,381
 383,zle zapakowane jedzenie,382
-384,zle zapakowane jedzenie,383
-385,inne,384
+384,Zbyt dlugi czas oczekiwania,383
+385,zle zapakowane jedzenie,384
 386,nieswieze jedzenie,385
 387,Zbyt dlugi czas oczekiwania,386
-388,nieswieze jedzenie,387
+388,Zbyt dlugi czas oczekiwania,387
 389,inne,388
 390,Zbyt dlugi czas oczekiwania,389
-391,inne,390
-392,zle zapakowane jedzenie,391
-393,inne,392
-394,zle zapakowane jedzenie,393
-395,inne,394
-396,Zbyt dlugi czas oczekiwania,395
-397,nieswieze jedzenie,396
-398,Zbyt dlugi czas oczekiwania,397
-399,zle zapakowane jedzenie,398
-400,nieswieze jedzenie,399
-401,inne,400
-402,nieswieze jedzenie,401
+391,zle zapakowane jedzenie,390
+392,inne,391
+393,zle zapakowane jedzenie,392
+394,inne,393
+395,nieswieze jedzenie,394
+396,nieswieze jedzenie,395
+397,Zbyt dlugi czas oczekiwania,396
+398,inne,397
+399,nieswieze jedzenie,398
+400,zle zapakowane jedzenie,399
+401,zle zapakowane jedzenie,400
+402,zle zapakowane jedzenie,401
 403,inne,402
-404,inne,403
-405,inne,404
-406,Zbyt dlugi czas oczekiwania,405
-407,inne,406
+404,zle zapakowane jedzenie,403
+405,nieswieze jedzenie,404
+406,nieswieze jedzenie,405
+407,nieswieze jedzenie,406
 408,nieswieze jedzenie,407
-409,inne,408
-410,nieswieze jedzenie,409
-411,Zbyt dlugi czas oczekiwania,410
-412,inne,411
-413,inne,412
-414,Zbyt dlugi czas oczekiwania,413
-415,inne,414
+409,zle zapakowane jedzenie,408
+410,Zbyt dlugi czas oczekiwania,409
+411,zle zapakowane jedzenie,410
+412,Zbyt dlugi czas oczekiwania,411
+413,Zbyt dlugi czas oczekiwania,412
+414,zle zapakowane jedzenie,413
+415,Zbyt dlugi czas oczekiwania,414
 416,zle zapakowane jedzenie,415
 417,zle zapakowane jedzenie,416
-418,Zbyt dlugi czas oczekiwania,417
-419,zle zapakowane jedzenie,418
+418,nieswieze jedzenie,417
+419,Zbyt dlugi czas oczekiwania,418
 420,nieswieze jedzenie,419
-421,nieswieze jedzenie,420
-422,zle zapakowane jedzenie,421
-423,zle zapakowane jedzenie,422
-424,inne,423
+421,Zbyt dlugi czas oczekiwania,420
+422,nieswieze jedzenie,421
+423,nieswieze jedzenie,422
+424,nieswieze jedzenie,423
 425,nieswieze jedzenie,424
-426,nieswieze jedzenie,425
-427,Zbyt dlugi czas oczekiwania,426
-428,inne,427
+426,zle zapakowane jedzenie,425
+427,nieswieze jedzenie,426
+428,Zbyt dlugi czas oczekiwania,427
 429,zle zapakowane jedzenie,428
-430,inne,429
-431,inne,430
-432,inne,431
+430,zle zapakowane jedzenie,429
+431,nieswieze jedzenie,430
+432,nieswieze jedzenie,431
 433,inne,432
-434,zle zapakowane jedzenie,433
+434,nieswieze jedzenie,433
 435,Zbyt dlugi czas oczekiwania,434
-436,nieswieze jedzenie,435
-437,Zbyt dlugi czas oczekiwania,436
-438,Zbyt dlugi czas oczekiwania,437
+436,Zbyt dlugi czas oczekiwania,435
+437,nieswieze jedzenie,436
+438,inne,437
 439,zle zapakowane jedzenie,438
-440,Zbyt dlugi czas oczekiwania,439
-441,Zbyt dlugi czas oczekiwania,440
-442,Zbyt dlugi czas oczekiwania,441
-443,nieswieze jedzenie,442
-444,inne,443
-445,zle zapakowane jedzenie,444
-446,zle zapakowane jedzenie,445
+440,inne,439
+441,zle zapakowane jedzenie,440
+442,inne,441
+443,zle zapakowane jedzenie,442
+444,nieswieze jedzenie,443
+445,Zbyt dlugi czas oczekiwania,444
+446,Zbyt dlugi czas oczekiwania,445
 447,inne,446
-448,Zbyt dlugi czas oczekiwania,447
-449,nieswieze jedzenie,448
+448,inne,447
+449,zle zapakowane jedzenie,448
 450,Zbyt dlugi czas oczekiwania,449
-451,inne,450
-452,Zbyt dlugi czas oczekiwania,451
-453,inne,452
-454,zle zapakowane jedzenie,453
+451,nieswieze jedzenie,450
+452,zle zapakowane jedzenie,451
+453,Zbyt dlugi czas oczekiwania,452
+454,inne,453
 455,Zbyt dlugi czas oczekiwania,454
-456,inne,455
-457,zle zapakowane jedzenie,456
-458,inne,457
-459,inne,458
-460,Zbyt dlugi czas oczekiwania,459
-461,zle zapakowane jedzenie,460
-462,inne,461
-463,inne,462
-464,nieswieze jedzenie,463
-465,nieswieze jedzenie,464
-466,zle zapakowane jedzenie,465
-467,nieswieze jedzenie,466
+456,nieswieze jedzenie,455
+457,inne,456
+458,nieswieze jedzenie,457
+459,Zbyt dlugi czas oczekiwania,458
+460,inne,459
+461,inne,460
+462,Zbyt dlugi czas oczekiwania,461
+463,zle zapakowane jedzenie,462
+464,zle zapakowane jedzenie,463
+465,Zbyt dlugi czas oczekiwania,464
+466,nieswieze jedzenie,465
+467,inne,466
 468,nieswieze jedzenie,467
 469,zle zapakowane jedzenie,468
-470,nieswieze jedzenie,469
-471,Zbyt dlugi czas oczekiwania,470
-472,zle zapakowane jedzenie,471
+470,Zbyt dlugi czas oczekiwania,469
+471,nieswieze jedzenie,470
+472,Zbyt dlugi czas oczekiwania,471
 473,Zbyt dlugi czas oczekiwania,472
-474,Zbyt dlugi czas oczekiwania,473
-475,nieswieze jedzenie,474
-476,nieswieze jedzenie,475
-477,Zbyt dlugi czas oczekiwania,476
-478,inne,477
-479,nieswieze jedzenie,478
+474,zle zapakowane jedzenie,473
+475,Zbyt dlugi czas oczekiwania,474
+476,inne,475
+477,zle zapakowane jedzenie,476
+478,Zbyt dlugi czas oczekiwania,477
+479,inne,478
 480,inne,479
-481,Zbyt dlugi czas oczekiwania,480
-482,zle zapakowane jedzenie,481
-483,Zbyt dlugi czas oczekiwania,482
-484,inne,483
-485,zle zapakowane jedzenie,484
-486,nieswieze jedzenie,485
-487,nieswieze jedzenie,486
+481,zle zapakowane jedzenie,480
+482,Zbyt dlugi czas oczekiwania,481
+483,inne,482
+484,Zbyt dlugi czas oczekiwania,483
+485,Zbyt dlugi czas oczekiwania,484
+486,zle zapakowane jedzenie,485
+487,inne,486
 488,nieswieze jedzenie,487
-489,zle zapakowane jedzenie,488
+489,Zbyt dlugi czas oczekiwania,488
 490,zle zapakowane jedzenie,489
-491,nieswieze jedzenie,490
-492,Zbyt dlugi czas oczekiwania,491
-493,nieswieze jedzenie,492
+491,inne,490
+492,nieswieze jedzenie,491
+493,zle zapakowane jedzenie,492
 494,zle zapakowane jedzenie,493
-495,inne,494
-496,inne,495
-497,zle zapakowane jedzenie,496
+495,zle zapakowane jedzenie,494
+496,zle zapakowane jedzenie,495
+497,inne,496
 498,nieswieze jedzenie,497
-499,nieswieze jedzenie,498
-500,inne,499
+499,Zbyt dlugi czas oczekiwania,498
+500,zle zapakowane jedzenie,499
 501,Zbyt dlugi czas oczekiwania,500
-502,nieswieze jedzenie,501
+502,Zbyt dlugi czas oczekiwania,501
 503,inne,502
 504,Zbyt dlugi czas oczekiwania,503
-505,nieswieze jedzenie,504
-506,Zbyt dlugi czas oczekiwania,505
+505,inne,504
+506,zle zapakowane jedzenie,505
 507,Zbyt dlugi czas oczekiwania,506
 508,Zbyt dlugi czas oczekiwania,507
-509,zle zapakowane jedzenie,508
+509,inne,508
 510,zle zapakowane jedzenie,509
-511,nieswieze jedzenie,510
+511,inne,510
 512,nieswieze jedzenie,511
-513,inne,512
+513,zle zapakowane jedzenie,512
 514,nieswieze jedzenie,513
-515,inne,514
-516,inne,515
-517,nieswieze jedzenie,516
+515,Zbyt dlugi czas oczekiwania,514
+516,Zbyt dlugi czas oczekiwania,515
+517,zle zapakowane jedzenie,516
 518,Zbyt dlugi czas oczekiwania,517
-519,inne,518
-520,inne,519
-521,inne,520
-522,nieswieze jedzenie,521
-523,zle zapakowane jedzenie,522
-524,nieswieze jedzenie,523
+519,Zbyt dlugi czas oczekiwania,518
+520,zle zapakowane jedzenie,519
+521,zle zapakowane jedzenie,520
+522,Zbyt dlugi czas oczekiwania,521
+523,Zbyt dlugi czas oczekiwania,522
+524,zle zapakowane jedzenie,523
 525,inne,524
-526,nieswieze jedzenie,525
+526,inne,525
 527,zle zapakowane jedzenie,526
-528,Zbyt dlugi czas oczekiwania,527
+528,zle zapakowane jedzenie,527
 529,inne,528
-530,inne,529
-531,Zbyt dlugi czas oczekiwania,530
-532,inne,531
+530,Zbyt dlugi czas oczekiwania,529
+531,inne,530
+532,Zbyt dlugi czas oczekiwania,531
 533,inne,532
 534,inne,533
-535,zle zapakowane jedzenie,534
-536,zle zapakowane jedzenie,535
-537,inne,536
-538,zle zapakowane jedzenie,537
-539,nieswieze jedzenie,538
+535,nieswieze jedzenie,534
+536,Zbyt dlugi czas oczekiwania,535
+537,Zbyt dlugi czas oczekiwania,536
+538,nieswieze jedzenie,537
+539,zle zapakowane jedzenie,538
 540,nieswieze jedzenie,539
 541,inne,540
-542,nieswieze jedzenie,541
-543,nieswieze jedzenie,542
+542,Zbyt dlugi czas oczekiwania,541
+543,inne,542
 544,Zbyt dlugi czas oczekiwania,543
 545,zle zapakowane jedzenie,544
 546,Zbyt dlugi czas oczekiwania,545
 547,nieswieze jedzenie,546
-548,nieswieze jedzenie,547
-549,inne,548
-550,nieswieze jedzenie,549
+548,zle zapakowane jedzenie,547
+549,nieswieze jedzenie,548
+550,Zbyt dlugi czas oczekiwania,549
 551,nieswieze jedzenie,550
-552,nieswieze jedzenie,551
-553,Zbyt dlugi czas oczekiwania,552
-554,nieswieze jedzenie,553
-555,zle zapakowane jedzenie,554
-556,inne,555
+552,zle zapakowane jedzenie,551
+553,zle zapakowane jedzenie,552
+554,Zbyt dlugi czas oczekiwania,553
+555,Zbyt dlugi czas oczekiwania,554
+556,nieswieze jedzenie,555
 557,Zbyt dlugi czas oczekiwania,556
-558,nieswieze jedzenie,557
-559,nieswieze jedzenie,558
+558,zle zapakowane jedzenie,557
+559,inne,558
 560,inne,559
-561,nieswieze jedzenie,560
-562,zle zapakowane jedzenie,561
-563,Zbyt dlugi czas oczekiwania,562
-564,Zbyt dlugi czas oczekiwania,563
-565,Zbyt dlugi czas oczekiwania,564
+561,inne,560
+562,Zbyt dlugi czas oczekiwania,561
+563,inne,562
+564,zle zapakowane jedzenie,563
+565,zle zapakowane jedzenie,564
 566,inne,565
-567,zle zapakowane jedzenie,566
-568,Zbyt dlugi czas oczekiwania,567
-569,inne,568
-570,Zbyt dlugi czas oczekiwania,569
-571,inne,570
-572,nieswieze jedzenie,571
-573,nieswieze jedzenie,572
-574,nieswieze jedzenie,573
-575,nieswieze jedzenie,574
-576,inne,575
-577,zle zapakowane jedzenie,576
-578,nieswieze jedzenie,577
-579,nieswieze jedzenie,578
-580,zle zapakowane jedzenie,579
-581,inne,580
-582,nieswieze jedzenie,581
-583,nieswieze jedzenie,582
-584,inne,583
-585,Zbyt dlugi czas oczekiwania,584
-586,nieswieze jedzenie,585
-587,zle zapakowane jedzenie,586
-588,inne,587
-589,zle zapakowane jedzenie,588
-590,inne,589
+567,nieswieze jedzenie,566
+568,inne,567
+569,nieswieze jedzenie,568
+570,inne,569
+571,nieswieze jedzenie,570
+572,inne,571
+573,zle zapakowane jedzenie,572
+574,inne,573
+575,inne,574
+576,zle zapakowane jedzenie,575
+577,nieswieze jedzenie,576
+578,inne,577
+579,Zbyt dlugi czas oczekiwania,578
+580,nieswieze jedzenie,579
+581,nieswieze jedzenie,580
+582,inne,581
+583,inne,582
+584,nieswieze jedzenie,583
+585,nieswieze jedzenie,584
+586,inne,585
+587,Zbyt dlugi czas oczekiwania,586
+588,Zbyt dlugi czas oczekiwania,587
+589,nieswieze jedzenie,588
+590,nieswieze jedzenie,589
 591,zle zapakowane jedzenie,590
-592,nieswieze jedzenie,591
+592,inne,591
 593,Zbyt dlugi czas oczekiwania,592
 594,zle zapakowane jedzenie,593
-595,inne,594
-596,zle zapakowane jedzenie,595
-597,inne,596
-598,nieswieze jedzenie,597
-599,nieswieze jedzenie,598
-600,zle zapakowane jedzenie,599
-601,zle zapakowane jedzenie,600
-602,Zbyt dlugi czas oczekiwania,601
-603,Zbyt dlugi czas oczekiwania,602
-604,inne,603
-605,Zbyt dlugi czas oczekiwania,604
-606,nieswieze jedzenie,605
-607,nieswieze jedzenie,606
+595,nieswieze jedzenie,594
+596,nieswieze jedzenie,595
+597,nieswieze jedzenie,596
+598,zle zapakowane jedzenie,597
+599,Zbyt dlugi czas oczekiwania,598
+600,inne,599
+601,nieswieze jedzenie,600
+602,inne,601
+603,nieswieze jedzenie,602
+604,zle zapakowane jedzenie,603
+605,inne,604
+606,zle zapakowane jedzenie,605
+607,inne,606
 608,zle zapakowane jedzenie,607
 609,zle zapakowane jedzenie,608
-610,zle zapakowane jedzenie,609
-611,inne,610
-612,inne,611
+610,nieswieze jedzenie,609
+611,zle zapakowane jedzenie,610
+612,nieswieze jedzenie,611
 613,inne,612
 614,nieswieze jedzenie,613
-615,Zbyt dlugi czas oczekiwania,614
+615,zle zapakowane jedzenie,614
 616,nieswieze jedzenie,615
-617,inne,616
-618,nieswieze jedzenie,617
-619,nieswieze jedzenie,618
-620,nieswieze jedzenie,619
-621,inne,620
-622,zle zapakowane jedzenie,621
-623,nieswieze jedzenie,622
-624,Zbyt dlugi czas oczekiwania,623
+617,nieswieze jedzenie,616
+618,zle zapakowane jedzenie,617
+619,inne,618
+620,inne,619
+621,zle zapakowane jedzenie,620
+622,nieswieze jedzenie,621
+623,Zbyt dlugi czas oczekiwania,622
+624,inne,623
 625,Zbyt dlugi czas oczekiwania,624
-626,inne,625
-627,zle zapakowane jedzenie,626
-628,nieswieze jedzenie,627
-629,Zbyt dlugi czas oczekiwania,628
-630,Zbyt dlugi czas oczekiwania,629
-631,inne,630
-632,nieswieze jedzenie,631
-633,zle zapakowane jedzenie,632
-634,nieswieze jedzenie,633
-635,Zbyt dlugi czas oczekiwania,634
-636,Zbyt dlugi czas oczekiwania,635
-637,Zbyt dlugi czas oczekiwania,636
-638,inne,637
+626,nieswieze jedzenie,625
+627,inne,626
+628,Zbyt dlugi czas oczekiwania,627
+629,zle zapakowane jedzenie,628
+630,nieswieze jedzenie,629
+631,nieswieze jedzenie,630
+632,Zbyt dlugi czas oczekiwania,631
+633,nieswieze jedzenie,632
+634,zle zapakowane jedzenie,633
+635,inne,634
+636,inne,635
+637,nieswieze jedzenie,636
+638,zle zapakowane jedzenie,637
 639,nieswieze jedzenie,638
-640,Zbyt dlugi czas oczekiwania,639
-641,Zbyt dlugi czas oczekiwania,640
-642,inne,641
+640,zle zapakowane jedzenie,639
+641,inne,640
+642,Zbyt dlugi czas oczekiwania,641
 643,Zbyt dlugi czas oczekiwania,642
-644,zle zapakowane jedzenie,643
-645,zle zapakowane jedzenie,644
-646,Zbyt dlugi czas oczekiwania,645
-647,zle zapakowane jedzenie,646
+644,inne,643
+645,Zbyt dlugi czas oczekiwania,644
+646,inne,645
+647,nieswieze jedzenie,646
 648,Zbyt dlugi czas oczekiwania,647
-649,Zbyt dlugi czas oczekiwania,648
-650,zle zapakowane jedzenie,649
-651,zle zapakowane jedzenie,650
-652,Zbyt dlugi czas oczekiwania,651
-653,nieswieze jedzenie,652
-654,nieswieze jedzenie,653
-655,zle zapakowane jedzenie,654
-656,Zbyt dlugi czas oczekiwania,655
-657,inne,656
-658,zle zapakowane jedzenie,657
-659,nieswieze jedzenie,658
-660,inne,659
+649,inne,648
+650,Zbyt dlugi czas oczekiwania,649
+651,inne,650
+652,nieswieze jedzenie,651
+653,Zbyt dlugi czas oczekiwania,652
+654,Zbyt dlugi czas oczekiwania,653
+655,Zbyt dlugi czas oczekiwania,654
+656,inne,655
+657,Zbyt dlugi czas oczekiwania,656
+658,Zbyt dlugi czas oczekiwania,657
+659,zle zapakowane jedzenie,658
+660,zle zapakowane jedzenie,659
 661,Zbyt dlugi czas oczekiwania,660
-662,inne,661
-663,Zbyt dlugi czas oczekiwania,662
+662,nieswieze jedzenie,661
+663,nieswieze jedzenie,662
 664,nieswieze jedzenie,663
-665,nieswieze jedzenie,664
-666,nieswieze jedzenie,665
-667,nieswieze jedzenie,666
-668,nieswieze jedzenie,667
-669,inne,668
-670,Zbyt dlugi czas oczekiwania,669
+665,Zbyt dlugi czas oczekiwania,664
+666,Zbyt dlugi czas oczekiwania,665
+667,inne,666
+668,inne,667
+669,nieswieze jedzenie,668
+670,nieswieze jedzenie,669
 671,Zbyt dlugi czas oczekiwania,670
-672,Zbyt dlugi czas oczekiwania,671
-673,zle zapakowane jedzenie,672
-674,zle zapakowane jedzenie,673
-675,Zbyt dlugi czas oczekiwania,674
+672,inne,671
+673,inne,672
+674,Zbyt dlugi czas oczekiwania,673
+675,nieswieze jedzenie,674
 676,zle zapakowane jedzenie,675
-677,Zbyt dlugi czas oczekiwania,676
-678,nieswieze jedzenie,677
+677,zle zapakowane jedzenie,676
+678,zle zapakowane jedzenie,677
 679,Zbyt dlugi czas oczekiwania,678
-680,Zbyt dlugi czas oczekiwania,679
-681,nieswieze jedzenie,680
-682,Zbyt dlugi czas oczekiwania,681
+680,nieswieze jedzenie,679
+681,zle zapakowane jedzenie,680
+682,nieswieze jedzenie,681
 683,inne,682
-684,Zbyt dlugi czas oczekiwania,683
-685,nieswieze jedzenie,684
-686,nieswieze jedzenie,685
-687,zle zapakowane jedzenie,686
-688,inne,687
+684,nieswieze jedzenie,683
+685,zle zapakowane jedzenie,684
+686,Zbyt dlugi czas oczekiwania,685
+687,Zbyt dlugi czas oczekiwania,686
+688,nieswieze jedzenie,687
 689,zle zapakowane jedzenie,688
 690,zle zapakowane jedzenie,689
-691,Zbyt dlugi czas oczekiwania,690
-692,zle zapakowane jedzenie,691
+691,inne,690
+692,inne,691
 693,Zbyt dlugi czas oczekiwania,692
-694,Zbyt dlugi czas oczekiwania,693
-695,nieswieze jedzenie,694
-696,Zbyt dlugi czas oczekiwania,695
+694,nieswieze jedzenie,693
+695,Zbyt dlugi czas oczekiwania,694
+696,nieswieze jedzenie,695
 697,zle zapakowane jedzenie,696
-698,Zbyt dlugi czas oczekiwania,697
+698,zle zapakowane jedzenie,697
 699,inne,698
-700,inne,699
+700,zle zapakowane jedzenie,699
 701,nieswieze jedzenie,700
-702,Zbyt dlugi czas oczekiwania,701
-703,Zbyt dlugi czas oczekiwania,702
-704,nieswieze jedzenie,703
-705,nieswieze jedzenie,704
-706,inne,705
-707,nieswieze jedzenie,706
-708,nieswieze jedzenie,707
-709,zle zapakowane jedzenie,708
-710,Zbyt dlugi czas oczekiwania,709
+702,inne,701
+703,nieswieze jedzenie,702
+704,zle zapakowane jedzenie,703
+705,inne,704
+706,nieswieze jedzenie,705
+707,zle zapakowane jedzenie,706
+708,Zbyt dlugi czas oczekiwania,707
+709,Zbyt dlugi czas oczekiwania,708
+710,zle zapakowane jedzenie,709
 711,inne,710
 712,nieswieze jedzenie,711
 713,nieswieze jedzenie,712
-714,inne,713
-715,zle zapakowane jedzenie,714
-716,Zbyt dlugi czas oczekiwania,715
-717,nieswieze jedzenie,716
-718,Zbyt dlugi czas oczekiwania,717
-719,inne,718
-720,nieswieze jedzenie,719
-721,nieswieze jedzenie,720
-722,inne,721
-723,zle zapakowane jedzenie,722
+714,zle zapakowane jedzenie,713
+715,Zbyt dlugi czas oczekiwania,714
+716,nieswieze jedzenie,715
+717,Zbyt dlugi czas oczekiwania,716
+718,zle zapakowane jedzenie,717
+719,zle zapakowane jedzenie,718
+720,Zbyt dlugi czas oczekiwania,719
+721,inne,720
+722,Zbyt dlugi czas oczekiwania,721
+723,Zbyt dlugi czas oczekiwania,722
 724,Zbyt dlugi czas oczekiwania,723
-725,zle zapakowane jedzenie,724
-726,Zbyt dlugi czas oczekiwania,725
+725,Zbyt dlugi czas oczekiwania,724
+726,inne,725
 727,zle zapakowane jedzenie,726
-728,nieswieze jedzenie,727
-729,nieswieze jedzenie,728
-730,inne,729
-731,zle zapakowane jedzenie,730
-732,Zbyt dlugi czas oczekiwania,731
-733,zle zapakowane jedzenie,732
-734,inne,733
-735,zle zapakowane jedzenie,734
-736,zle zapakowane jedzenie,735
-737,Zbyt dlugi czas oczekiwania,736
-738,Zbyt dlugi czas oczekiwania,737
-739,zle zapakowane jedzenie,738
-740,nieswieze jedzenie,739
-741,zle zapakowane jedzenie,740
-742,inne,741
-743,zle zapakowane jedzenie,742
+728,zle zapakowane jedzenie,727
+729,inne,728
+730,zle zapakowane jedzenie,729
+731,inne,730
+732,zle zapakowane jedzenie,731
+733,Zbyt dlugi czas oczekiwania,732
+734,zle zapakowane jedzenie,733
+735,Zbyt dlugi czas oczekiwania,734
+736,nieswieze jedzenie,735
+737,nieswieze jedzenie,736
+738,nieswieze jedzenie,737
+739,Zbyt dlugi czas oczekiwania,738
+740,inne,739
+741,Zbyt dlugi czas oczekiwania,740
+742,zle zapakowane jedzenie,741
+743,nieswieze jedzenie,742
 744,zle zapakowane jedzenie,743
-745,inne,744
-746,zle zapakowane jedzenie,745
-747,zle zapakowane jedzenie,746
-748,zle zapakowane jedzenie,747
-749,Zbyt dlugi czas oczekiwania,748
-750,zle zapakowane jedzenie,749
-751,zle zapakowane jedzenie,750
-752,zle zapakowane jedzenie,751
-753,Zbyt dlugi czas oczekiwania,752
-754,Zbyt dlugi czas oczekiwania,753
-755,Zbyt dlugi czas oczekiwania,754
-756,nieswieze jedzenie,755
-757,Zbyt dlugi czas oczekiwania,756
-758,nieswieze jedzenie,757
-759,Zbyt dlugi czas oczekiwania,758
-760,zle zapakowane jedzenie,759
+745,nieswieze jedzenie,744
+746,inne,745
+747,Zbyt dlugi czas oczekiwania,746
+748,Zbyt dlugi czas oczekiwania,747
+749,zle zapakowane jedzenie,748
+750,nieswieze jedzenie,749
+751,inne,750
+752,Zbyt dlugi czas oczekiwania,751
+753,zle zapakowane jedzenie,752
+754,nieswieze jedzenie,753
+755,inne,754
+756,zle zapakowane jedzenie,755
+757,inne,756
+758,zle zapakowane jedzenie,757
+759,nieswieze jedzenie,758
+760,nieswieze jedzenie,759
 761,nieswieze jedzenie,760
 762,zle zapakowane jedzenie,761
-763,inne,762
-764,zle zapakowane jedzenie,763
-765,Zbyt dlugi czas oczekiwania,764
-766,inne,765
+763,nieswieze jedzenie,762
+764,nieswieze jedzenie,763
+765,zle zapakowane jedzenie,764
+766,Zbyt dlugi czas oczekiwania,765
 767,inne,766
-768,Zbyt dlugi czas oczekiwania,767
-769,zle zapakowane jedzenie,768
-770,nieswieze jedzenie,769
-771,inne,770
-772,inne,771
-773,nieswieze jedzenie,772
-774,nieswieze jedzenie,773
-775,nieswieze jedzenie,774
-776,Zbyt dlugi czas oczekiwania,775
-777,Zbyt dlugi czas oczekiwania,776
-778,inne,777
-779,inne,778
-780,nieswieze jedzenie,779
-781,inne,780
-782,nieswieze jedzenie,781
+768,inne,767
+769,nieswieze jedzenie,768
+770,Zbyt dlugi czas oczekiwania,769
+771,nieswieze jedzenie,770
+772,nieswieze jedzenie,771
+773,Zbyt dlugi czas oczekiwania,772
+774,inne,773
+775,inne,774
+776,nieswieze jedzenie,775
+777,inne,776
+778,Zbyt dlugi czas oczekiwania,777
+779,zle zapakowane jedzenie,778
+780,zle zapakowane jedzenie,779
+781,nieswieze jedzenie,780
+782,Zbyt dlugi czas oczekiwania,781
 783,nieswieze jedzenie,782
-784,nieswieze jedzenie,783
+784,Zbyt dlugi czas oczekiwania,783
 785,nieswieze jedzenie,784
-786,zle zapakowane jedzenie,785
-787,zle zapakowane jedzenie,786
-788,nieswieze jedzenie,787
-789,Zbyt dlugi czas oczekiwania,788
-790,inne,789
-791,inne,790
-792,Zbyt dlugi czas oczekiwania,791
+786,nieswieze jedzenie,785
+787,nieswieze jedzenie,786
+788,zle zapakowane jedzenie,787
+789,zle zapakowane jedzenie,788
+790,zle zapakowane jedzenie,789
+791,zle zapakowane jedzenie,790
+792,zle zapakowane jedzenie,791
 793,Zbyt dlugi czas oczekiwania,792
-794,Zbyt dlugi czas oczekiwania,793
-795,nieswieze jedzenie,794
-796,nieswieze jedzenie,795
-797,inne,796
+794,nieswieze jedzenie,793
+795,Zbyt dlugi czas oczekiwania,794
+796,zle zapakowane jedzenie,795
+797,nieswieze jedzenie,796
 798,nieswieze jedzenie,797
-799,inne,798
-800,zle zapakowane jedzenie,799
-801,Zbyt dlugi czas oczekiwania,800
-802,inne,801
-803,Zbyt dlugi czas oczekiwania,802
-804,nieswieze jedzenie,803
+799,nieswieze jedzenie,798
+800,Zbyt dlugi czas oczekiwania,799
+801,nieswieze jedzenie,800
+802,nieswieze jedzenie,801
+803,inne,802
+804,Zbyt dlugi czas oczekiwania,803
 805,nieswieze jedzenie,804
 806,inne,805
-807,nieswieze jedzenie,806
-808,inne,807
-809,zle zapakowane jedzenie,808
-810,zle zapakowane jedzenie,809
-811,Zbyt dlugi czas oczekiwania,810
-812,nieswieze jedzenie,811
+807,inne,806
+808,zle zapakowane jedzenie,807
+809,nieswieze jedzenie,808
+810,Zbyt dlugi czas oczekiwania,809
+811,nieswieze jedzenie,810
+812,Zbyt dlugi czas oczekiwania,811
 813,inne,812
-814,nieswieze jedzenie,813
-815,nieswieze jedzenie,814
-816,nieswieze jedzenie,815
-817,inne,816
-818,Zbyt dlugi czas oczekiwania,817
-819,Zbyt dlugi czas oczekiwania,818
-820,nieswieze jedzenie,819
-821,Zbyt dlugi czas oczekiwania,820
+814,zle zapakowane jedzenie,813
+815,Zbyt dlugi czas oczekiwania,814
+816,Zbyt dlugi czas oczekiwania,815
+817,zle zapakowane jedzenie,816
+818,zle zapakowane jedzenie,817
+819,nieswieze jedzenie,818
+820,inne,819
+821,nieswieze jedzenie,820
 822,inne,821
-823,zle zapakowane jedzenie,822
-824,zle zapakowane jedzenie,823
+823,inne,822
+824,inne,823
 825,zle zapakowane jedzenie,824
-826,nieswieze jedzenie,825
+826,inne,825
 827,inne,826
 828,zle zapakowane jedzenie,827
-829,Zbyt dlugi czas oczekiwania,828
+829,inne,828
 830,Zbyt dlugi czas oczekiwania,829
 831,inne,830
-832,Zbyt dlugi czas oczekiwania,831
+832,zle zapakowane jedzenie,831
 833,inne,832
-834,zle zapakowane jedzenie,833
-835,nieswieze jedzenie,834
-836,nieswieze jedzenie,835
+834,inne,833
+835,zle zapakowane jedzenie,834
+836,Zbyt dlugi czas oczekiwania,835
 837,inne,836
 838,Zbyt dlugi czas oczekiwania,837
-839,inne,838
-840,nieswieze jedzenie,839
-841,inne,840
+839,nieswieze jedzenie,838
+840,inne,839
+841,Zbyt dlugi czas oczekiwania,840
 842,nieswieze jedzenie,841
-843,nieswieze jedzenie,842
-844,nieswieze jedzenie,843
-845,zle zapakowane jedzenie,844
-846,nieswieze jedzenie,845
-847,nieswieze jedzenie,846
+843,zle zapakowane jedzenie,842
+844,inne,843
+845,Zbyt dlugi czas oczekiwania,844
+846,Zbyt dlugi czas oczekiwania,845
+847,Zbyt dlugi czas oczekiwania,846
 848,zle zapakowane jedzenie,847
 849,inne,848
 850,nieswieze jedzenie,849
 851,Zbyt dlugi czas oczekiwania,850
-852,Zbyt dlugi czas oczekiwania,851
-853,nieswieze jedzenie,852
-854,inne,853
-855,Zbyt dlugi czas oczekiwania,854
-856,inne,855
-857,Zbyt dlugi czas oczekiwania,856
-858,nieswieze jedzenie,857
-859,Zbyt dlugi czas oczekiwania,858
+852,inne,851
+853,inne,852
+854,nieswieze jedzenie,853
+855,zle zapakowane jedzenie,854
+856,nieswieze jedzenie,855
+857,inne,856
+858,inne,857
+859,nieswieze jedzenie,858
 860,inne,859
 861,nieswieze jedzenie,860
-862,Zbyt dlugi czas oczekiwania,861
-863,Zbyt dlugi czas oczekiwania,862
-864,inne,863
-865,nieswieze jedzenie,864
-866,zle zapakowane jedzenie,865
-867,zle zapakowane jedzenie,866
-868,inne,867
+862,inne,861
+863,inne,862
+864,nieswieze jedzenie,863
+865,inne,864
+866,nieswieze jedzenie,865
+867,Zbyt dlugi czas oczekiwania,866
+868,zle zapakowane jedzenie,867
 869,nieswieze jedzenie,868
-870,zle zapakowane jedzenie,869
-871,inne,870
-872,nieswieze jedzenie,871
+870,nieswieze jedzenie,869
+871,Zbyt dlugi czas oczekiwania,870
+872,zle zapakowane jedzenie,871
 873,Zbyt dlugi czas oczekiwania,872
-874,nieswieze jedzenie,873
-875,nieswieze jedzenie,874
-876,inne,875
-877,nieswieze jedzenie,876
-878,zle zapakowane jedzenie,877
+874,zle zapakowane jedzenie,873
+875,inne,874
+876,zle zapakowane jedzenie,875
+877,Zbyt dlugi czas oczekiwania,876
+878,inne,877
 879,Zbyt dlugi czas oczekiwania,878
 880,nieswieze jedzenie,879
-881,nieswieze jedzenie,880
+881,zle zapakowane jedzenie,880
 882,nieswieze jedzenie,881
-883,inne,882
-884,nieswieze jedzenie,883
-885,Zbyt dlugi czas oczekiwania,884
-886,zle zapakowane jedzenie,885
-887,zle zapakowane jedzenie,886
-888,nieswieze jedzenie,887
+883,nieswieze jedzenie,882
+884,zle zapakowane jedzenie,883
+885,zle zapakowane jedzenie,884
+886,inne,885
+887,nieswieze jedzenie,886
+888,zle zapakowane jedzenie,887
 889,Zbyt dlugi czas oczekiwania,888
-890,inne,889
-891,inne,890
-892,inne,891
-893,zle zapakowane jedzenie,892
-894,nieswieze jedzenie,893
+890,Zbyt dlugi czas oczekiwania,889
+891,Zbyt dlugi czas oczekiwania,890
+892,zle zapakowane jedzenie,891
+893,nieswieze jedzenie,892
+894,inne,893
 895,inne,894
 896,Zbyt dlugi czas oczekiwania,895
-897,nieswieze jedzenie,896
-898,Zbyt dlugi czas oczekiwania,897
-899,inne,898
-900,zle zapakowane jedzenie,899
-901,zle zapakowane jedzenie,900
-902,zle zapakowane jedzenie,901
+897,zle zapakowane jedzenie,896
+898,inne,897
+899,Zbyt dlugi czas oczekiwania,898
+900,inne,899
+901,nieswieze jedzenie,900
+902,inne,901
 903,inne,902
-904,zle zapakowane jedzenie,903
-905,inne,904
-906,zle zapakowane jedzenie,905
+904,inne,903
+905,nieswieze jedzenie,904
+906,Zbyt dlugi czas oczekiwania,905
 907,zle zapakowane jedzenie,906
-908,inne,907
-909,zle zapakowane jedzenie,908
-910,zle zapakowane jedzenie,909
-911,Zbyt dlugi czas oczekiwania,910
-912,inne,911
-913,nieswieze jedzenie,912
-914,nieswieze jedzenie,913
-915,inne,914
-916,inne,915
-917,Zbyt dlugi czas oczekiwania,916
-918,zle zapakowane jedzenie,917
-919,inne,918
+908,Zbyt dlugi czas oczekiwania,907
+909,inne,908
+910,Zbyt dlugi czas oczekiwania,909
+911,nieswieze jedzenie,910
+912,zle zapakowane jedzenie,911
+913,Zbyt dlugi czas oczekiwania,912
+914,zle zapakowane jedzenie,913
+915,Zbyt dlugi czas oczekiwania,914
+916,zle zapakowane jedzenie,915
+917,zle zapakowane jedzenie,916
+918,Zbyt dlugi czas oczekiwania,917
+919,zle zapakowane jedzenie,918
 920,Zbyt dlugi czas oczekiwania,919
-921,zle zapakowane jedzenie,920
-922,Zbyt dlugi czas oczekiwania,921
-923,inne,922
+921,Zbyt dlugi czas oczekiwania,920
+922,nieswieze jedzenie,921
+923,Zbyt dlugi czas oczekiwania,922
 924,inne,923
-925,zle zapakowane jedzenie,924
-926,nieswieze jedzenie,925
+925,nieswieze jedzenie,924
+926,inne,925
 927,inne,926
 928,zle zapakowane jedzenie,927
-929,Zbyt dlugi czas oczekiwania,928
-930,Zbyt dlugi czas oczekiwania,929
-931,Zbyt dlugi czas oczekiwania,930
+929,inne,928
+930,inne,929
+931,zle zapakowane jedzenie,930
 932,zle zapakowane jedzenie,931
 933,zle zapakowane jedzenie,932
 934,nieswieze jedzenie,933
-935,Zbyt dlugi czas oczekiwania,934
-936,Zbyt dlugi czas oczekiwania,935
-937,zle zapakowane jedzenie,936
-938,zle zapakowane jedzenie,937
-939,inne,938
-940,inne,939
-941,Zbyt dlugi czas oczekiwania,940
-942,zle zapakowane jedzenie,941
-943,inne,942
-944,inne,943
-945,inne,944
-946,Zbyt dlugi czas oczekiwania,945
-947,zle zapakowane jedzenie,946
+935,nieswieze jedzenie,934
+936,inne,935
+937,nieswieze jedzenie,936
+938,nieswieze jedzenie,937
+939,Zbyt dlugi czas oczekiwania,938
+940,nieswieze jedzenie,939
+941,inne,940
+942,inne,941
+943,zle zapakowane jedzenie,942
+944,zle zapakowane jedzenie,943
+945,zle zapakowane jedzenie,944
+946,zle zapakowane jedzenie,945
+947,nieswieze jedzenie,946
 948,nieswieze jedzenie,947
-949,Zbyt dlugi czas oczekiwania,948
-950,Zbyt dlugi czas oczekiwania,949
-951,Zbyt dlugi czas oczekiwania,950
-952,nieswieze jedzenie,951
-953,zle zapakowane jedzenie,952
-954,zle zapakowane jedzenie,953
-955,inne,954
-956,zle zapakowane jedzenie,955
-957,inne,956
-958,zle zapakowane jedzenie,957
+949,inne,948
+950,inne,949
+951,zle zapakowane jedzenie,950
+952,Zbyt dlugi czas oczekiwania,951
+953,inne,952
+954,nieswieze jedzenie,953
+955,Zbyt dlugi czas oczekiwania,954
+956,inne,955
+957,zle zapakowane jedzenie,956
+958,inne,957
 959,Zbyt dlugi czas oczekiwania,958
-960,nieswieze jedzenie,959
+960,zle zapakowane jedzenie,959
 961,inne,960
-962,Zbyt dlugi czas oczekiwania,961
-963,nieswieze jedzenie,962
-964,inne,963
-965,Zbyt dlugi czas oczekiwania,964
-966,Zbyt dlugi czas oczekiwania,965
-967,nieswieze jedzenie,966
-968,inne,967
-969,nieswieze jedzenie,968
-970,inne,969
-971,nieswieze jedzenie,970
-972,nieswieze jedzenie,971
-973,nieswieze jedzenie,972
+962,inne,961
+963,inne,962
+964,Zbyt dlugi czas oczekiwania,963
+965,nieswieze jedzenie,964
+966,zle zapakowane jedzenie,965
+967,zle zapakowane jedzenie,966
+968,nieswieze jedzenie,967
+969,inne,968
+970,Zbyt dlugi czas oczekiwania,969
+971,Zbyt dlugi czas oczekiwania,970
+972,zle zapakowane jedzenie,971
+973,Zbyt dlugi czas oczekiwania,972
 974,inne,973
-975,inne,974
+975,Zbyt dlugi czas oczekiwania,974
 976,nieswieze jedzenie,975
-977,Zbyt dlugi czas oczekiwania,976
-978,nieswieze jedzenie,977
-979,zle zapakowane jedzenie,978
-980,Zbyt dlugi czas oczekiwania,979
-981,zle zapakowane jedzenie,980
-982,inne,981
+977,inne,976
+978,zle zapakowane jedzenie,977
+979,Zbyt dlugi czas oczekiwania,978
+980,nieswieze jedzenie,979
+981,nieswieze jedzenie,980
+982,Zbyt dlugi czas oczekiwania,981
 983,zle zapakowane jedzenie,982
-984,nieswieze jedzenie,983
-985,nieswieze jedzenie,984
-986,Zbyt dlugi czas oczekiwania,985
+984,Zbyt dlugi czas oczekiwania,983
+985,zle zapakowane jedzenie,984
+986,zle zapakowane jedzenie,985
 987,inne,986
 988,nieswieze jedzenie,987
 989,nieswieze jedzenie,988
-990,zle zapakowane jedzenie,989
+990,Zbyt dlugi czas oczekiwania,989
 991,inne,990
-992,inne,991
-993,Zbyt dlugi czas oczekiwania,992
+992,nieswieze jedzenie,991
+993,inne,992
 994,inne,993
-995,zle zapakowane jedzenie,994
-996,zle zapakowane jedzenie,995
-997,zle zapakowane jedzenie,996
-998,Zbyt dlugi czas oczekiwania,997
-999,inne,998
+995,inne,994
+996,inne,995
+997,inne,996
+998,inne,997
+999,nieswieze jedzenie,998
 1000,nieswieze jedzenie,999
