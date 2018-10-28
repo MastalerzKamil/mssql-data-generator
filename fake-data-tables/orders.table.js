@@ -31,7 +31,6 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
   const orderNumber = orderId % config.MAX_ORDER_NUMBER;  // TODO change into small amounts of ORDER_NUMBER
 
   var randRestaurantForeignId = orderId % (restaurants.length - 1)
-  console.log(restaurants);
   // if modulo was 0 forieign id will be random
   if (randRestaurantForeignId === 0) randRestaurantForeignId = getRestaurantId();
 

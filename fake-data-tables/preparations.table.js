@@ -63,10 +63,12 @@ function getMealInfoObject(componentInfoArray, mealName) {
 function splitActivities(mealInfoObject) {
   const activity = mealInfoObject.activitesRequired[0];
   const timeDuration = mealInfoObject.activitesRequired[1];
+  const componentName = mealInfoObject.componentName;
   const possibleWorkers = findWorkerForActivity(activity);
   const worker = possibleWorkers[1][0];
   return [
     mealInfoObject.mealName,
+    componentName,
     activity,
     timeDuration,
     worker
@@ -84,13 +86,22 @@ function getPreparationsListForRandMeal() {
     return splittedActiviteis;
   });
 }
+//console.log(getPreparationsListForRandMeal());
 
+const preparationsArray = [];
+
+function randPreparations(preparationId) {
+  const mealPreparation = getPreparationsListForRandMeal();
+  mealPreparation.map(function (componenPreparation) {
+    componenPreparation.push(preparationId)
+    preparationsArray.push(componenPreparation);
+  });
+
+}
 function getPreparations() {
-  const preparationsArray = [];
-  preparationsArray.push(["Id", "Czas przygotowywania", "Rodzaj", "pozycja pracownika", "Id zestawu", "Nazwa produktu"])
+  preparationsArray.push(["Nazwa_zestawu", "Nazwa_produktu", "Rodzaj", "Czas_przygotowywania", "Pozycja_pracownika", "id"])
   for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
-    //const preparation = randPreparation(i);
-    //preparationsArray.push(preparation);
+    randPreparations(i);  // FIXME don't use global variables
   }
   return preparationsArray;
 }
