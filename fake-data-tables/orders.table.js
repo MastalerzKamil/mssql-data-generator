@@ -18,12 +18,13 @@ function getRestaurantId() {
 }
 
 // generating record to Orders Table
-function randOrders(orderId) {
-  var startOrderDate = faker.date.past(); // TODO change into between
+function randOrders(orderId, startPeriodDate, endPeriodDate) {
+  var startOrderDate = faker.date.between(startPeriodDate, endPeriodDate);
+  // we need timestamp to generate finish order date
   const startOrderTimestamp = convertDateToTimestamp(startOrderDate);
   const waitingTime = utils.randomIntFromInterval(config.MIN_ORDER_TIME, config.MAX_ORDER_TIME);
   const finishOrderTimestamp = startOrderTimestamp + waitingTime;
-  //changing Date format to seconds
+  // changing Date format to timestamp
   startOrderDate = moment.unix(startOrderTimestamp).utcOffset("+0000").format();
   const finishOrderDate = moment.unix(finishOrderTimestamp).utcOffset('+0000').format();
 
@@ -36,16 +37,24 @@ function randOrders(orderId) {
   return [orderId, startOrderDate, finishOrderDate, orderNumber, randRestaurantForeignId];
 }
 
-function getOrders() {
+function getOrders(startPeriodDate, endPeriodDate) {
   const ordersArray = [];
   ordersArray.push(["id", "Data Zamówienia", "Data Odebrania zamówienia", "Numer zamówienia", "Id restauracji"])
   for (var i = 1; i <= config.ORDERS_AMOUNT; i++) {
-    const order = randOrders(i);
+    const order = randOrders(i, startPeriodDate, endPeriodDate);
     ordersArray.push(order);
   }
   return ordersArray;
 }
 
 module.exports = {
-  orders: getOrders()
+  orders: function (startPeriodDate, endPeriodDate) {
+    const ordersArray = [];
+    ordersArray.push(["id", "Data Zamówienia", "Data Odebrania zamówienia", "Numer zamówienia", "Id restauracji"])
+    for (var i = 1; i <= config.ORDERS_AMOUNT; i++) {
+      const order = randOrders(i, startPeriodDate, endPeriodDate);
+      ordersArray.push(order);
+    }
+    return ordersArray;
+  }
 }
