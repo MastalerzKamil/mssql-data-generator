@@ -1,6 +1,6 @@
 const faker = require("faker");
 const moment = require("moment");
-const restaurants = require("./restaurants.table").restaurants;
+const restaurants = require("./restaurants.table");
 const utils = require("./../utils");
 const config = require("./../config");
 
@@ -31,27 +31,18 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
   const orderNumber = orderId % config.MAX_ORDER_NUMBER;  // TODO change into small amounts of ORDER_NUMBER
 
   var randRestaurantForeignId = orderId % (restaurants.length - 1)
+  console.log(restaurants);
   // if modulo was 0 forieign id will be random
   if (randRestaurantForeignId === 0) randRestaurantForeignId = getRestaurantId();
 
   return [orderId, startOrderDate, finishOrderDate, orderNumber, randRestaurantForeignId];
 }
 
-function getOrders(startPeriodDate, endPeriodDate) {
-  const ordersArray = [];
-  ordersArray.push(["id", "Data Zamówienia", "Data Odebrania zamówienia", "Numer zamówienia", "Id restauracji"])
-  for (var i = 1; i <= config.ORDERS_AMOUNT; i++) {
-    const order = randOrders(i, startPeriodDate, endPeriodDate);
-    ordersArray.push(order);
-  }
-  return ordersArray;
-}
-
 module.exports = {
   orders: function (startPeriodDate, endPeriodDate) {
     const ordersArray = [];
-    ordersArray.push(["id", "Data Zamówienia", "Data Odebrania zamówienia", "Numer zamówienia", "Id restauracji"])
-    for (var i = 1; i <= config.ORDERS_AMOUNT; i++) {
+    ordersArray.push(["id", "Data_Zamowienia", "Data_Odebrania", "Numer_zamowienia", "Id_restauracji"])
+    for (var i = 1; i < config.ORDERS_AMOUNT; i++) {
       const order = randOrders(i, startPeriodDate, endPeriodDate);
       ordersArray.push(order);
     }

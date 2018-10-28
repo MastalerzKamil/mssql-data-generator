@@ -1,60 +1,99 @@
 const utils = require("./../utils");
-const meals = require("./meals.table").meals;
-const products = require("./products.table").products;
 const config = require("./../config");
 
-const preparationTypes = ['smazenie', 'pieczenie', 'grillowanie', 'pakowania', 'krojenie', 'skladania',
-  'panierowanie', 'nakladanie', 'nalewanie'];
+const mealsWithComponents = [
+  ["BigMac", ["bulka", "salata", "poledwiczki", "pomidor"]],
+  ["Frytki", ["frytki"]],
+  ["Cola", ["cola"]],
+  ["Woda", ["woda"]],
+  ["Hamburger", ["bulka", "salata", "poledwiczki"]],
+  ["Salatka", ["salata", "pomidor", "ogorki"]],
+  ["Kubelek classic", ["udka", "poledwiczki"]]
+];
 
-const jobPositions = ['Uczacy sie', 'Kasjer', 'Kucharz', 'Serwis', 'Pakowacz'];
+const componentsWithActivity = [
+  ["frytki", ["smazenie", "00:03:00"]],
+  ["salata", ["mycie", "00:01:00"]],
+  ["bulka", ["krojenie", "00:00:30"]],
+  ["cola", ["nalewanie", "00:01:30"]],
+  ["woda", ["nalewanie", "00:01:30"]],
+  ["poledwiczki", ["smazenie", "00:05:00"]],
+  ["udka", ["smazenie", "00:05:00"]],
+  ["pomidor", ["mycie", "00:01:00"]],
+  ["ogorki", ["mycie", "00:01:00"]]
+];
 
-function convertSecondsToTime(secNum) {
-  var hours = Math.floor(secNum / 3600);
-  var minutes = Math.floor((secNum - (hours * 3600)) / 60);
-  var seconds = secNum - (hours * 3600) - (minutes * 60);
+const workersWithActivity = [
+  ["smazenie", ["Kucharz"]],
+  ["pakowanie", ["Kasjer"]],
+  ["krojenie", ["Serwis"]],
+  ["mycie", ["Serwis"]],
+  ["nalewanie", ["kasjer"]]
+];
 
-  if (hours < 10) { hours = "0" + hours; }
-  if (minutes < 10) { minutes = "0" + minutes; }
-  if (seconds < 10) { seconds = "0" + seconds; }
-  if (hours == "00") {
-    return minutes + ':' + seconds;
-  } else {
-    return hours + ':' + minutes + ':' + seconds;
-  }
+function randMeal() {
+  const mealsTypeLength = mealsWithComponents.length;
+  const randomedMealIndex = utils.randomIntFromInterval(0, mealsTypeLength - 1);
+  return mealsWithComponents[randomedMealIndex];
 }
 
-function randPreparation(preparationId) {
-  const randomSeconds = utils.randomIntFromInterval(40, 1800);
-  const preaprationTime = convertSecondsToTime(randomSeconds);
-  const typeIndex = utils.randomIntFromInterval(0, preparationTypes.length - 1);
-  const type = preparationTypes[typeIndex];
-  const positionIndex = utils.randomIntFromInterval(0, jobPositions.length - 1);
-  const position = jobPositions[positionIndex];
-  var mealId = preparationId % (meals.length - 1);
+// return worker position on given activity
+function findWorkerForActivity(activity) {
+  const foundActivity = workersWithActivity.filter(function (activityElement) {
+    return (activityElement[0] == activity)
+  })[0];
+  return foundActivity;
+}
 
-  if (mealId === 0) {
-    mealId = 1;
-  }
+function findComponentsWithActivity(component) {
+  const activitiesWithTimes = componentsWithActivity.filter(function (compElement) {
+    return component == compElement[0];
+  })[0];
+  return activitiesWithTimes
+}
 
-  var productIndex = preparationId % (products.length - 1);
+function getMealInfoObject(componentInfoArray, mealName) {
+  return {
+    componentName: componentInfoArray[0],
+    activitesRequired: componentInfoArray[1],
+    mealName: mealName
+  };
+}
 
-  if (productIndex === 0) {
-    productIndex = 1;
-  }
-  const productName = products[productIndex];
-  return [preparationId, preaprationTime, type, position, mealId, productName];
+function splitActivities(mealInfoObject) {
+  const activity = mealInfoObject.activitesRequired[0];
+  const timeDuration = mealInfoObject.activitesRequired[1];
+  const possibleWorkers = findWorkerForActivity(activity);
+  const worker = possibleWorkers[1][0];
+  return [
+    mealInfoObject.mealName,
+    activity,
+    timeDuration,
+    worker
+  ]
+}
+
+function getPreparationsListForRandMeal() {
+  const mealWithComponents = randMeal(); // rand meal
+  const randomMealName = mealWithComponents[0];
+  const components = mealWithComponents[1];
+  return components.map(function (comp) {
+    const componentInfoArray = findComponentsWithActivity(comp)
+    const mealInfoObject = getMealInfoObject(componentInfoArray, randomMealName);
+    const splittedActiviteis = splitActivities(mealInfoObject);
+    return splittedActiviteis;
+  });
 }
 
 function getPreparations() {
   const preparationsArray = [];
-  preparationsArray.push(["Id", "Czas przygotowywania", "Rodzaj", "pozycja pracownika", "Id zamowienia", "Nazwa produktu"])
+  preparationsArray.push(["Id", "Czas przygotowywania", "Rodzaj", "pozycja pracownika", "Id zestawu", "Nazwa produktu"])
   for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
-    const preparation = randPreparation(i);
-    preparationsArray.push(preparation);
+    //const preparation = randPreparation(i);
+    //preparationsArray.push(preparation);
   }
   return preparationsArray;
 }
-
 module.exports = {
   preparations: getPreparations(),
 }

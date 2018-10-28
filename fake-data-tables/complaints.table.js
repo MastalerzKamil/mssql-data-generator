@@ -13,12 +13,12 @@ function randComplaint(complaintId) {
   if (orderId === 0) {
     orderId = utils.randomIntFromInterval(1, orders.length - 1);
   }
-  return [complaintId, reason, orderId];
+  return [complaintId, reason, "", orderId];
 }
 
 function getComplaints() {
   const complaintsArray = [];
-  complaintsArray.push(["id", "Przyczyna", "ID Zamówienia"]);
+  complaintsArray.push(["id", "Przyczyna", "Uwagi", "ID_Zamowienia"]);
   for (var i = 1; i <= config.COMPLAINTS_AMOUNT; i++) {
     const complaint = randComplaint(i);
     complaintsArray.push(complaint);

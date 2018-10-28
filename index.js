@@ -12,7 +12,7 @@ const surveysResources = require("./fake-outsite-resources/surveys.resource");
 // t1
 require("./utils").writeToCSV(restaurantsTable.restaurants, config.t1RestaurantsPath); // Restaurants
 require("./utils").writeToCSV(ordersTable.orders(config.brandStart, config.T1), config.t1OrdersPath); // Orders
-require("./utils").writeToCSV(mealsTable.meals, config.t1OrdersPath); // Meals
+require("./utils").writeToCSV(mealsTable.meals, config.t1MealsPath); // Meals
 require("./utils").writeToCSV(productsTable.products, config.t1ProductsPath); // Products
 require("./utils").writeToCSV(preparationsTable.preparations, config.t1PreparationsPath); // Preparations
 require("./utils").writeToCSV(complaintsTable.complaints, config.t1ComplaintsPath); // Complaints
@@ -22,7 +22,7 @@ require("./utils").writeToCSV(surveysResources.surveys(config.brandStart, config
 
 // t2
 require("./utils").writeToCSV(restaurantsTable.restaurants, config.t2RestaurantsPath); // Restaurants
-require("./utils").writeToCSV(ordersTable.orders(config.T1, config.T2), config.t1OrdersPath); // Orders
+// require("./utils").writeToCSV(ordersTable.orders(config.T1, config.T2), config.t2OrdersPath); // Orders
 require("./utils").writeToCSV(mealsTable.meals, config.t2MealsPath); // Meals
 require("./utils").writeToCSV(productsTable.products, config.t2ProductsPath); // Products
 require("./utils").writeToCSV(preparationsTable.preparations, config.t2PreparationsPath); // Preparations
