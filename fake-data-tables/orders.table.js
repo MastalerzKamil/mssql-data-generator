@@ -1,6 +1,6 @@
 const faker = require("faker");
 const moment = require("moment");
-const restaurants = require("./restaurants.table");
+const restaurants = require("./restaurants.table").restaurants;
 const utils = require("./../utils");
 const config = require("./../config");
 
@@ -30,9 +30,11 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
 
   const orderNumber = orderId % config.MAX_ORDER_NUMBER;  // TODO change into small amounts of ORDER_NUMBER
 
-  var randRestaurantForeignId = orderId % (restaurants.length - 1)
+  var randRestaurantForeignId = orderId % (restaurants.length)
   // if modulo was 0 forieign id will be random
-  if (randRestaurantForeignId === 0) randRestaurantForeignId = getRestaurantId();
+  if (randRestaurantForeignId === 0) {
+    randRestaurantForeignId = getRestaurantId();
+  }
 
   return [orderId, startOrderDate, finishOrderDate, orderNumber, randRestaurantForeignId];
 }
