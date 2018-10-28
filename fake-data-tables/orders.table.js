@@ -28,7 +28,7 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
   startOrderDate = moment.unix(startOrderTimestamp).utcOffset("+0000").format();
   const finishOrderDate = moment.unix(finishOrderTimestamp).utcOffset('+0000').format();
 
-  const orderNumber = orderId % config.MAX_ORDER_NUMBER;
+  const orderNumber = orderId % config.MAX_ORDER_NUMBER;  // TODO change into small amounts of ORDER_NUMBER
 
   var randRestaurantForeignId = orderId % (restaurants.length - 1)
   // if modulo was 0 forieign id will be random
