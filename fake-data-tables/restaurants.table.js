@@ -2,6 +2,8 @@ const faker = require("faker");
 const RESTARANTS_AMOUNT = 2;
 
 faker.locale = "pl";
+const cityBase = ["Gdansk", "Warszawa"];
+
 
 function randRestaurantData(restaurantId) {
   const randomRestaurant = faker.helpers.createCard(); // random contact card containing many properties
@@ -13,7 +15,7 @@ function randRestaurantData(restaurantId) {
 
 function getRestaurants() {
   const restarantsArray = [];
-  restarantsArray.push(["id", "Misto", "Adres", "Kod pocztowy"])
+  restarantsArray.push(["id", "Miasto", "Adres", "Kod pocztowy"])
   for (var i = 1; i <= RESTARANTS_AMOUNT; i++) {
     const restaurant = randRestaurantData(i);
     restarantsArray.push(restaurant);

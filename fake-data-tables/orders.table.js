@@ -23,7 +23,7 @@ function getRestaurantId() {
 
 // generating record to Orders Table
 function randOrders(orderId) {
-  var startOrderDate = faker.date.past();
+  var startOrderDate = faker.date.past(); // TODO change into between
   const startOrderTimestamp = convertDateToTimestamp(startOrderDate);
   const waitingTime = utils.randomIntFromInterval(MIN_ORDER_TIME, MAX_ORDER_TIME);
   const finishOrderTimestamp = startOrderTimestamp + waitingTime;
