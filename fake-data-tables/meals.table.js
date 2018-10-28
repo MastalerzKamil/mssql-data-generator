@@ -1,8 +1,7 @@
 const faker = require("faker");
 const orders = require("./orders.table").orders;
 const utils = require("./../utils");
-
-const MEALS_AMOUNT = 100000;
+const config = require("./../config");
 
 faker.locale = "pl";
 
@@ -21,7 +20,7 @@ function randMeals(mealId) {
 function getMeals() {
   const mealsArray = [];
   mealsArray.push(["Id", "Ilosc", "Id zamowienia"])
-  for (var i = 1; i <= MEALS_AMOUNT; i++) {
+  for (var i = 1; i <= config.MEALS_AMOUNT; i++) {
     const meal = randMeals(i);
     mealsArray.push(meal);
   }
@@ -30,5 +29,4 @@ function getMeals() {
 
 module.exports = {
   meals: getMeals(),
-  csvPath: "./generated-data/meals.csv"
 };

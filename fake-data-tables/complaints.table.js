@@ -1,7 +1,7 @@
 const orders = require("./orders.table").orders;
 const utils = require("./../utils");
+const config = require("./../config");
 
-const COMPLAINTS_AMOUNT = 1000;
 const complainReasons = ['Zbyt dlugi czas oczekiwania', 'nieswieze jedzenie', 'zle zapakowane jedzenie',
   'inne'];
 
@@ -19,7 +19,7 @@ function randComplaint(complaintId) {
 function getComplaints() {
   const complaintsArray = [];
   complaintsArray.push(["id", "Przyczyna", "ID Zamówienia"]);
-  for (var i = 1; i <= COMPLAINTS_AMOUNT; i++) {
+  for (var i = 1; i <= config.COMPLAINTS_AMOUNT; i++) {
     const complaint = randComplaint(i);
     complaintsArray.push(complaint);
   }
@@ -28,5 +28,4 @@ function getComplaints() {
 
 module.exports = {
   complaints: getComplaints(),
-  csvPath: "./generated-data/complaints.csv"
 }

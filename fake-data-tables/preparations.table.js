@@ -1,8 +1,7 @@
 const utils = require("./../utils");
 const meals = require("./meals.table").meals;
 const products = require("./products.table").products;
-
-const PREPARATIONS_AMOUNT = 200000;
+const config = require("./../config");
 
 const preparationTypes = ['smazenie', 'pieczenie', 'grillowanie', 'pakowania', 'krojenie', 'skladania',
   'panierowanie', 'nakladanie', 'nalewanie'];
@@ -49,7 +48,7 @@ function randPreparation(preparationId) {
 function getPreparations() {
   const preparationsArray = [];
   preparationsArray.push(["Id", "Czas przygotowywania", "Rodzaj", "pozycja pracownika", "Id zamowienia", "Nazwa produktu"])
-  for (var i = 1; i <= PREPARATIONS_AMOUNT; i++) {
+  for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
     const preparation = randPreparation(i);
     preparationsArray.push(preparation);
   }
@@ -58,5 +57,4 @@ function getPreparations() {
 
 module.exports = {
   preparations: getPreparations(),
-  csvPath: "./generated-data/preparations.csv"
 }
