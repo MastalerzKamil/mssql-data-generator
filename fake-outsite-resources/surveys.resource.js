@@ -5,7 +5,7 @@ const moment = require("moment");
 
 function randSurvey(startPeriod, endPeriod) {
   var randDate = faker.date.between(startPeriod, endPeriod);
-  randDate = moment().utcOffset("+0000").format();
+  randDate = moment(randDate).utcOffset("+0000").format();
   return [
     utils.randomIntFromInterval(1, 5),
     randDate

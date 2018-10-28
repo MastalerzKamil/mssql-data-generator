@@ -10,9 +10,9 @@ function randWork(workerId, startPeriod, endPeriod) {
     randomedWorkerId = utils.randomIntFromInterval(1, config.WORKERS_AMOUNT);
   }
   var startWork = faker.date.between(startPeriod, endPeriod)
-  startWork = moment().utcOffset("+0000").format();
+  startWork = moment(startWork).utcOffset("+0000").format();
   var endWork = faker.date.between(startWork, endPeriod)
-  endWork = moment().utcOffset("+0000").format();
+  endWork = moment(endWork).utcOffset("+0000").format();
   return [randomedWorkerId, startWork, endWork];
 }
 
