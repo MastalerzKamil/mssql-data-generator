@@ -14,7 +14,7 @@ function randRestaurantData(restaurantId) {
 function getRestaurants() {
   const restarantsArray = [];
   restarantsArray.push(["id", "Miasto", "Adres", "Kod pocztowy"])
-  for (var i = 1; i <= config.RESTARANTS_AMOUNT; i++) {
+  for (var i = 1; i <= config.RESTAURANTS_AMOUNT; i++) {
     const restaurant = randRestaurantData(i);
     restarantsArray.push(restaurant);
   }

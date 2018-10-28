@@ -1,5 +1,5 @@
 const faker = require("faker");
-const orders = require("./orders.table").orders;
+const orders = require("./orders.table").orders();
 const utils = require("./../utils");
 const config = require("./../config");
 
@@ -14,12 +14,12 @@ function randMeals(mealId) {
   const mealAmount = utils.randomIntFromInterval(1, 15);
   var foreignOrderId = mealId % orders.length - 1
   if (foreignOrderId === 0) foreignOrderId = getOrderId();
-  return [mealId, mealAmount, foreignOrderId];
+  return [mealId, mealAmount, "", foreignOrderId];
 }
 
 function getMeals() {
   const mealsArray = [];
-  mealsArray.push(["Id", "Ilosc", "Id zamowienia"])
+  mealsArray.push(["Id", "Ilosc", "Uwagi", "Id zamowienia"])
   for (var i = 1; i <= config.MEALS_AMOUNT; i++) {
     const meal = randMeals(i);
     mealsArray.push(meal);
