@@ -12,5 +12,4 @@ module.exports = {
     ["skrzydelka"],
     ["udko"],
     ["ser"]],
-  csvPath: "./generated-data/products.csv"
 }

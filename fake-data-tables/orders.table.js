@@ -2,11 +2,7 @@ const faker = require("faker");
 const moment = require("moment");
 const restaurants = require("./restaurants.table").restaurants;
 const utils = require("./../utils");
-
-const ORDERS_AMOUNT = 10000;
-const MAX_ORDER_TIME = 480  // max 8 minutes waiting for meal
-const MIN_ORDER_TIME = 1  // min waitnig time
-const MAX_ORDER_NUMBER = 1000
+const config = require("./../config");
 
 faker.locale = "pl";
 moment.locale(); // setting local timezone to formating date
@@ -22,16 +18,17 @@ function getRestaurantId() {
 }
 
 // generating record to Orders Table
-function randOrders(orderId) {
-  var startOrderDate = faker.date.past();
+function randOrders(orderId, startPeriodDate, endPeriodDate) {
+  var startOrderDate = faker.date.between(startPeriodDate, endPeriodDate);
+  // we need timestamp to generate finish order date
   const startOrderTimestamp = convertDateToTimestamp(startOrderDate);
-  const waitingTime = utils.randomIntFromInterval(MIN_ORDER_TIME, MAX_ORDER_TIME);
+  const waitingTime = utils.randomIntFromInterval(config.MIN_ORDER_TIME, config.MAX_ORDER_TIME);
   const finishOrderTimestamp = startOrderTimestamp + waitingTime;
-  //changing Date format to seconds
+  // changing Date format to timestamp
   startOrderDate = moment.unix(startOrderTimestamp).utcOffset("+0000").format();
   const finishOrderDate = moment.unix(finishOrderTimestamp).utcOffset('+0000').format();
 
-  const orderNumber = orderId % MAX_ORDER_NUMBER;
+  const orderNumber = orderId % config.MAX_ORDER_NUMBER;
 
   var randRestaurantForeignId = orderId % (restaurants.length - 1)
   // if modulo was 0 forieign id will be random
@@ -40,17 +37,24 @@ function randOrders(orderId) {
   return [orderId, startOrderDate, finishOrderDate, orderNumber, randRestaurantForeignId];
 }
 
-function getOrders() {
+function getOrders(startPeriodDate, endPeriodDate) {
   const ordersArray = [];
   ordersArray.push(["id", "Data Zamówienia", "Data Odebrania zamówienia", "Numer zamówienia", "Id restauracji"])
-  for (var i = 1; i <= ORDERS_AMOUNT; i++) {
-    const order = randOrders(i);
+  for (var i = 1; i <= config.ORDERS_AMOUNT; i++) {
+    const order = randOrders(i, startPeriodDate, endPeriodDate);
     ordersArray.push(order);
   }
   return ordersArray;
 }
 
 module.exports = {
-  csvPath: "./generated-data/orders.csv",
-  orders: getOrders()
+  orders: function (startPeriodDate, endPeriodDate) {
+    const ordersArray = [];
+    ordersArray.push(["id", "Data Zamówienia", "Data Odebrania zamówienia", "Numer zamówienia", "Id restauracji"])
+    for (var i = 1; i <= config.ORDERS_AMOUNT; i++) {
+      const order = randOrders(i, startPeriodDate, endPeriodDate);
+      ordersArray.push(order);
+    }
+    return ordersArray;
+  }
 }
