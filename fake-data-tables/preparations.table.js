@@ -97,20 +97,33 @@ function getPreparationsListForRandMeal() {
 
 const preparationsArray = [];
 var preparationId = 1;
-function randPreparations() {
-  const mealPreparation = getPreparationsListForRandMeal(preparationId);
-  mealPreparation.map(function(componenPreparation) {
-    componenPreparation.push(preparationId);
-    preparationsArray.push(componenPreparation);
+
+function randPreparations(iteration, orders) {
+  const mealPreparation = getPreparationsListForRandMeal();
+  mealPreparation.map(function(componentPreparation, index) {
+    var orderId = (iteration + index) % orders.length;
+
+    if (orderId === 0) {
+      orderId = utils.randomIntFromInterval(1, orders.length - 1);
+    }
+    componentPreparation.push(orderId);
+    preparationsArray.push(componentPreparation);
   });
 }
-function getPreparations() {
-  // preparationsArray.push(["Nazwa_zestawu", "Nazwa_produktu", "Rodzaj", "Czas_przygotowywania", "Pozycja_pracownika", "id"])
-  for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
-    randPreparations(); // FIXME don't use global variables
-  }
-  return preparationsArray;
-}
+
 module.exports = {
-  preparations: getPreparations()
+  preparations: function(orders) {
+    preparationsArray.push([
+      "Nazwa_zestawu",
+      "Nazwa_produktu",
+      "Rodzaj",
+      "Czas_przygotowywania",
+      "Pozycja_pracownika",
+      "id"
+    ]);
+    for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
+      randPreparations(i, orders); // FIXME don't use global variables
+    }
+    return preparationsArray;
+  }
 };
