@@ -62,7 +62,7 @@ function getMealInfoObject(componentInfoArray, mealName) {
   };
 }
 
-function splitActivities(mealInfoObject, preparationId) {
+function splitActivities(mealInfoObject) {
   const activity = mealInfoObject.activitesRequired[0];
   const timeDuration = mealInfoObject.activitesRequired[1];
   const componentName = mealInfoObject.componentName;
@@ -78,9 +78,7 @@ function splitActivities(mealInfoObject, preparationId) {
   ];
 }
 
-function getPreparationId() {}
-
-function getPreparationsListForRandMeal(preparationId) {
+function getPreparationsListForRandMeal() {
   const mealWithComponents = randMeal(); // rand meal
   const randomMealName = mealWithComponents[0];
   const components = mealWithComponents[1];
@@ -91,15 +89,15 @@ function getPreparationsListForRandMeal(preparationId) {
       componentInfoArray,
       randomMealName
     );
-    const splittedActiviteis = splitActivities(mealInfoObject, preparationId);
+    const splittedActiviteis = splitActivities(mealInfoObject);
     return splittedActiviteis;
   });
 }
 //console.log(getPreparationsListForRandMeal());
 
 const preparationsArray = [];
-
-function randPreparations(preparationId) {
+var preparationId = 1;
+function randPreparations() {
   const mealPreparation = getPreparationsListForRandMeal(preparationId);
   mealPreparation.map(function(componenPreparation) {
     componenPreparation.push(preparationId);
@@ -109,7 +107,7 @@ function randPreparations(preparationId) {
 function getPreparations() {
   // preparationsArray.push(["Nazwa_zestawu", "Nazwa_produktu", "Rodzaj", "Czas_przygotowywania", "Pozycja_pracownika", "id"])
   for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
-    randPreparations(i); // FIXME don't use global variables
+    randPreparations(); // FIXME don't use global variables
   }
   return preparationsArray;
 }

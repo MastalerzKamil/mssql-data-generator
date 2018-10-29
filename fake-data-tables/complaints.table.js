@@ -2,13 +2,20 @@ const orders = require("./orders.table").orders;
 const utils = require("./../utils");
 const config = require("./../config");
 
-const complainReasons = ['Zbyt dlugi czas oczekiwania', 'nieswieze jedzenie', 'zle zapakowane jedzenie',
-  'inne'];
+const complainReasons = [
+  "Zbyt dlugi czas oczekiwania",
+  "nieswieze jedzenie",
+  "zle zapakowane jedzenie",
+  "inne"
+];
 
 function randComplaint(complaintId) {
-  const complaintIndex = utils.randomIntFromInterval(0, complainReasons.length - 1);
+  const complaintIndex = utils.randomIntFromInterval(
+    0,
+    complainReasons.length - 1
+  );
   const reason = complainReasons[complaintIndex];
-  var orderId = complaintId % orders.length - 1;
+  var orderId = (complaintId % orders.length) + 1;
 
   if (orderId === 0) {
     orderId = utils.randomIntFromInterval(1, orders.length - 1);
@@ -27,5 +34,5 @@ function getComplaints() {
 }
 
 module.exports = {
-  complaints: getComplaints(),
-}
+  complaints: getComplaints()
+};
