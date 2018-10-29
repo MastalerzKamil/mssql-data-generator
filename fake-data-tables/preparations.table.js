@@ -39,17 +39,19 @@ function randMeal() {
 
 // return worker position on given activity
 function findWorkerForActivity(activity) {
-  const foundActivity = workersWithActivity.filter(function (activityElement) {
-    return (activityElement[0] == activity)
+  const foundActivity = workersWithActivity.filter(function(activityElement) {
+    return activityElement[0] == activity;
   })[0];
   return foundActivity;
 }
 
 function findComponentsWithActivity(component) {
-  const activitiesWithTimes = componentsWithActivity.filter(function (compElement) {
+  const activitiesWithTimes = componentsWithActivity.filter(function(
+    compElement
+  ) {
     return component == compElement[0];
   })[0];
-  return activitiesWithTimes
+  return activitiesWithTimes;
 }
 
 function getMealInfoObject(componentInfoArray, mealName) {
@@ -60,29 +62,36 @@ function getMealInfoObject(componentInfoArray, mealName) {
   };
 }
 
-function splitActivities(mealInfoObject) {
+function splitActivities(mealInfoObject, preparationId) {
   const activity = mealInfoObject.activitesRequired[0];
   const timeDuration = mealInfoObject.activitesRequired[1];
   const componentName = mealInfoObject.componentName;
   const possibleWorkers = findWorkerForActivity(activity);
   const worker = possibleWorkers[1][0];
   return [
-    mealInfoObject.mealName,
+    // mealInfoObject.mealName,
+    preparationId,
     componentName,
     activity,
     timeDuration,
     worker
-  ]
+  ];
 }
 
-function getPreparationsListForRandMeal() {
+function getPreparationId() {}
+
+function getPreparationsListForRandMeal(preparationId) {
   const mealWithComponents = randMeal(); // rand meal
   const randomMealName = mealWithComponents[0];
   const components = mealWithComponents[1];
-  return components.map(function (comp) {
-    const componentInfoArray = findComponentsWithActivity(comp)
-    const mealInfoObject = getMealInfoObject(componentInfoArray, randomMealName);
-    const splittedActiviteis = splitActivities(mealInfoObject);
+  return components.map(function(comp) {
+    preparationId++;
+    const componentInfoArray = findComponentsWithActivity(comp);
+    const mealInfoObject = getMealInfoObject(
+      componentInfoArray,
+      randomMealName
+    );
+    const splittedActiviteis = splitActivities(mealInfoObject, preparationId);
     return splittedActiviteis;
   });
 }
@@ -91,20 +100,19 @@ function getPreparationsListForRandMeal() {
 const preparationsArray = [];
 
 function randPreparations(preparationId) {
-  const mealPreparation = getPreparationsListForRandMeal();
-  mealPreparation.map(function (componenPreparation) {
-    componenPreparation.push(preparationId)
+  const mealPreparation = getPreparationsListForRandMeal(preparationId);
+  mealPreparation.map(function(componenPreparation) {
+    componenPreparation.push(preparationId);
     preparationsArray.push(componenPreparation);
   });
-
 }
 function getPreparations() {
-  preparationsArray.push(["Nazwa_zestawu", "Nazwa_produktu", "Rodzaj", "Czas_przygotowywania", "Pozycja_pracownika", "id"])
+  // preparationsArray.push(["Nazwa_zestawu", "Nazwa_produktu", "Rodzaj", "Czas_przygotowywania", "Pozycja_pracownika", "id"])
   for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
-    randPreparations(i);  // FIXME don't use global variables
+    randPreparations(i); // FIXME don't use global variables
   }
   return preparationsArray;
 }
 module.exports = {
-  preparations: getPreparations(),
-}
+  preparations: getPreparations()
+};
