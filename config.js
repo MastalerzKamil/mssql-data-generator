@@ -1,9 +1,17 @@
 const moment = require("moment");
 
 module.exports = {
-  brandStart: moment().subtract(2, 'years').utcOffset("+0000").format(),
-  T1: moment().utcOffset("+0000").format(),
-  T2: moment().subtract(7, 'days').utcOffset("+0000").format(),
+  brandStart: moment()
+    .subtract(2, "months")
+    .utcOffset("+0000")
+    .format(),
+  T1: moment()
+    .utcOffset("+0000")
+    .format(),
+  T2: moment()
+    .subtract(7, "days")
+    .utcOffset("+0000")
+    .format(),
   t1RestaurantsPath: "generated-data/t1/restaurantsT1.csv",
   t2RestaurantsPath: "generated-data/t2/restaurantsT2.csv",
   t1OrdersPath: "generated-data/t1/ordersT1.csv",
@@ -21,14 +29,14 @@ module.exports = {
   t1SurveyPath: "generated-data/outsite-resources-t1/surveyT1.csv",
   t2SurveyPath: "generated-data/outsite-resources-t2/surveyT2.csv",
   RESTAURANTS_AMOUNT: 2,
-  PREPARATIONS_AMOUNT: 200000,
-  ORDERS_AMOUNT: 10000,
-  MAX_ORDER_TIME: 480,  // max 8 minutes waiting for meal
-  MIN_ORDER_TIME: 1,  // min waitnig time
+  PREPARATIONS_AMOUNT: 20,
+  ORDERS_AMOUNT: 10,
+  MAX_ORDER_TIME: 480, // max 8 minutes waiting for meal
+  MIN_ORDER_TIME: 1, // min waitnig time
   MAX_ORDER_NUMBER: 1000,
-  MEALS_AMOUNT: 100000,
-  COMPLAINTS_AMOUNT: 1000,
+  MEALS_AMOUNT: 10,
+  COMPLAINTS_AMOUNT: 5,
   WORKERS_AMOUNT: 20,
-  WORKS_AMOUNT: 200000,
-  SURVEYS_AMOUNT: 5000,
-}
+  WORKS_AMOUNT: 2000,
+  SURVEYS_AMOUNT: 5
+};
