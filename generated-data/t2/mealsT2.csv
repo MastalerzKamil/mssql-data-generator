@@ -1,11 +1,11 @@
-Id,Ilosc,Uwagi,Id zamowienia
-1,Frytki,4,,1
-2,Cola,9,,2
-3,Woda,10,,3
-4,Hamburger,3,,4
-5,Salatka,6,,5
-6,Kubelek classic,7,,6
-7,Salatka,8,,7
-8,Frytki,4,,8
-9,Cola,12,,9
-10,Woda,7,,2
+Id,Nazwa_zamowienia,Ilosc,Uwagi,Id zamowienia
+1,Frytki,13,,1
+2,Cola,2,,2
+3,Woda,3,,3
+4,Hamburger,1,,4
+5,Salatka,3,,5
+6,Kubelek classic,6,,6
+7,Hamburger,1,,7
+8,Frytki,6,,8
+9,Cola,8,,9
+10,Woda,11,,6
