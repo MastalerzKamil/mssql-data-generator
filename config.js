@@ -33,7 +33,6 @@ module.exports = {
   MAX_ORDER_TIME: 480, // max 8 minutes waiting for meal
   MIN_ORDER_TIME: 1, // min waitnig time
   MAX_ORDER_NUMBER: 1000,
-  COMPLAINTS_AMOUNT: 5,
   WORKERS_AMOUNT: 20,
   WORKS_AMOUNT: 2000,
   SURVEYS_AMOUNT: 5
