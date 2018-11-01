@@ -1,14 +1,16 @@
 const utils = require("./../utils");
 const config = require("./../config");
 
+
+//Tu zaminlam nazwy na liczbę (tak jak jest w tabeli meals)
 const mealsWithComponents = [
-  ["BigMac", ["bulka", "salata", "poledwiczki", "pomidor"]],
-  ["Frytki", ["frytki"]],
-  ["Cola", ["cola"]],
-  ["Woda", ["woda"]],
-  ["Hamburger", ["bulka", "salata", "poledwiczki"]],
-  ["Salatka", ["salata", "pomidor", "ogorki"]],
-  ["Kubelek classic", ["udka", "poledwiczki"]]
+  [1, ["bulka", "salata", "poledwiczki", "pomidor"]], //"BigMac"
+  [2, ["frytki"]], //"Frytki"
+  [3, ["cola"]], //"Cola"
+  [4, ["woda"]], //"Woda"
+  [5, ["bulka", "salata", "poledwiczki"]], //"Hamburger"
+  [6, ["salata", "pomidor", "ogorki"]], //"Salatka"
+  [7, ["udka", "poledwiczki"]] //"Kubelek classic"
 ];
 
 const componentsWithActivity = [
@@ -74,7 +76,8 @@ function splitActivities(mealInfoObject) {
     componentName,
     activity,
     timeDuration,
-    worker
+    worker,
+	idZestawu
   ];
 }
 
@@ -96,33 +99,21 @@ function getPreparationsListForRandMeal() {
 //console.log(getPreparationsListForRandMeal());
 
 const preparationsArray = [];
-var preparationId = 1;
-
-function randPreparations(iteration, orders) {
+var preparationId = 0;
+var idZestawu = 1;
+function randPreparations(iteration, orders) { 
   const mealPreparation = getPreparationsListForRandMeal();
   mealPreparation.map(function(componentPreparation, index) {
-    var orderId = (iteration + index) % orders.length;
-
-    if (orderId === 0) {
-      orderId = utils.randomIntFromInterval(1, orders.length - 1);
-    }
-    componentPreparation.push(orderId);
+    //componentPreparation.push(iteration); //ID zestawu
     preparationsArray.push(componentPreparation);
   });
 }
 
 module.exports = {
   preparations: function(orders) {
-    preparationsArray.push([
-      "Nazwa_zestawu",
-      "Nazwa_produktu",
-      "Rodzaj",
-      "Czas_przygotowywania",
-      "Pozycja_pracownika",
-      "id"
-    ]);
     for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
       randPreparations(i, orders); // FIXME don't use global variables
+	  idZestawu++;
     }
     return preparationsArray;
   }
