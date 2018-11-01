@@ -1,6 +1,5 @@
 const faker = require("faker");
 const moment = require("moment");
-const restaurants = require("./restaurants.table").restaurants;
 const utils = require("./../utils");
 const config = require("./../config");
 
@@ -14,7 +13,7 @@ function convertDateToTimestamp(strDate) {
 
 // restaurantId = random index between 1 and length-1 we have implemented header
 function getRestaurantId() {
-  return utils.randomIntFromInterval(1, restaurants.length - 1);
+  return utils.randomIntFromInterval(1, config.ORDERS_AMOUNT - 1);
 }
 
 // generating record to Orders Table
@@ -30,7 +29,7 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
 
   const orderNumber = orderId % config.MAX_ORDER_NUMBER;  // TODO change into small amounts of ORDER_NUMBER
 
-  var randRestaurantForeignId = utils.randomIntFromInterval(1, restaurants.length);
+  var randRestaurantForeignId = utils.randomIntFromInterval(1, config.ORDERS_AMOUNT);
   // if modulo was 0 forieign id will be random 
   if (randRestaurantForeignId === 0) {
     randRestaurantForeignId = getRestaurantId();

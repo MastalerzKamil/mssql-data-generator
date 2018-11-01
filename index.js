@@ -1,5 +1,4 @@
 const config = require("./config");
-const restaurantsTable = require("./fake-data-tables/restaurants.table");
 const ordersTable = require("./fake-data-tables/orders.table");
 const mealsTable = require("./fake-data-tables/meals.table");
 const productsTable = require("./fake-data-tables/products.table");
