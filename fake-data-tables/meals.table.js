@@ -21,8 +21,7 @@ function getOrderId(orders) {
 
 function randMeals(mealId, orders,OrderId) {
   const mealAmount = utils.randomIntFromInterval(1, 5);
-  var randMealNameIndex = mealId % mealsNames.length;
-// var randMealNameIndex = utils.randomIntFromInterval(1, 10) % mealsNames.length;
+  var randMealNameIndex = utils.randomIntFromInterval(1, 10) % mealsNames.length;
   if (randMealNameIndex === 0) {
     randMealNameIndex = utils.randomIntFromInterval(0, mealsNames.length - 1);
   }
