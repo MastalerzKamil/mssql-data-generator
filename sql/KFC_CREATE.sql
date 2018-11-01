@@ -13,7 +13,7 @@ CREATE TABLE ZAMOWIENIA
 	Godzina_zamowienia time NOT NULL,
 	Data_odebrania date NOT NULL,
 	Godzina_odebrania time NOT NULL,
-	Numer_zamowienia INT CHECK(Numer_zamowienia<1000) NOT NULL,
+	Numer_zamowienia INT NOT NULL,
 	ID_restauracji INT REFERENCES RESTAURACJE
 );
 
@@ -33,15 +33,16 @@ CREATE TABLE PRODUKTY
 
 CREATE TABLE PRZYGOTOWANIA
 (
-	ID INT IDENTITY(1,1) Primary key,
-	Nazwa VARCHAR (50) REFERENCES PRODUKTY NOT NULL,
-	Rodzaj VARCHAR (30)
-		CHECK(Rodzaj IN ('smazenie','pakowanie', 'krojenie', 'mycie', 'nalewanie')) NOT NULL,
 	Czas time NOT NULL,
+	ID INT IDENTITY(1,1) Primary key,
+	Rodzaj VARCHAR (30)
+		CHECK(Rodzaj IN ('smazenie','pieczenie', 'grillowanie', 'pakowania', 'krojenie', 'skladania', 
+		'panierowanie', 'nakladanie', 'nalewanie')) NOT NULL,
 	Stanowisko VARCHAR (50)
 		CHECK(Stanowisko IN ('Uczacy sie', 'Kasjer', 'Kucharz', 'Serwis', 'Pakowacz'))
 		NOT NULL,
 	ID_zestawu INT REFERENCES ZESTAWY NOT NULL,
+	Nazwa VARCHAR (50) REFERENCES PRODUKTY NOT NULL
 );
 
 CREATE TABLE REKLAMACJE
@@ -53,4 +54,4 @@ CREATE TABLE REKLAMACJE
 	Uwagi VARCHAR (150),
 	ID_zamowienia INT REFERENCES ZAMOWIENIA
 );
-
+	

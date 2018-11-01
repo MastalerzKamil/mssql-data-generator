@@ -21,7 +21,6 @@ function randComplaint(complaintId, orders) {
 module.exports = {
   complaints: function(orders) {
     const complaintsArray = [];
-    complaintsArray.push(["id", "Przyczyna", "Uwagi", "ID_Zamowienia"]);
     for (var i = 1; i <= config.COMPLAINTS_AMOUNT; i++) {
       const complaint = randComplaint(i, orders);
       complaintsArray.push(complaint);

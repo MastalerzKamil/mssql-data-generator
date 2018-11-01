@@ -2,15 +2,14 @@ const utils = require("./../utils");
 const config = require("./../config");
 
 
-//Tu zaminlam nazwy na liczbę (tak jak jest w tabeli meals)
 const mealsWithComponents = [
-  [1, ["bulka", "salata", "poledwiczki", "pomidor"]], //"BigMac"
-  [2, ["frytki"]], //"Frytki"
-  [3, ["cola"]], //"Cola"
-  [4, ["woda"]], //"Woda"
-  [5, ["bulka", "salata", "poledwiczki"]], //"Hamburger"
-  [6, ["salata", "pomidor", "ogorki"]], //"Salatka"
-  [7, ["udka", "poledwiczki"]] //"Kubelek classic"
+  ["BigMac", ["bulka", "salata", "poledwiczki", "pomidor"]], 
+  ["Frytki", ["frytki"]], 
+  ["Cola", ["cola"]], 
+  ["Woda", ["woda"]], 
+  ["Hamburger", ["bulka", "salata", "poledwiczki"]], 
+  ["Salatka", ["salata", "pomidor", "ogorki"]],
+  ["KubelekClassic", ["udka", "poledwiczki"]] 
 ];
 
 const componentsWithActivity = [
@@ -32,12 +31,6 @@ const workersWithActivity = [
   ["mycie", ["Serwis"]],
   ["nalewanie", ["kasjer"]]
 ];
-
-function randMeal() {
-  const mealsTypeLength = mealsWithComponents.length;
-  const randomedMealIndex = utils.randomIntFromInterval(0, mealsTypeLength - 1);
-  return mealsWithComponents[randomedMealIndex];
-}
 
 // return worker position on given activity
 function findWorkerForActivity(activity) {
@@ -81,8 +74,16 @@ function splitActivities(mealInfoObject) {
   ];
 }
 
-function getPreparationsListForRandMeal() {
-  const mealWithComponents = randMeal(); // rand meal
+function findMeal(meal) {
+  for(var i = 0; i<mealsWithComponents.length;i++){
+  if (mealsWithComponents[i][0]==meal)
+	  return mealsWithComponents[i];
+  }
+}
+
+function getPreparationsListForMeal(meal) {
+  const mealWithComponents = findMeal(meal);
+  
   const randomMealName = mealWithComponents[0];
   const components = mealWithComponents[1];
   return components.map(function(comp) {
@@ -96,23 +97,27 @@ function getPreparationsListForRandMeal() {
     return splittedActiviteis;
   });
 }
-//console.log(getPreparationsListForRandMeal());
 
 const preparationsArray = [];
 var preparationId = 0;
-var idZestawu = 1;
-function randPreparations(iteration, orders) { 
-  const mealPreparation = getPreparationsListForRandMeal();
+var idZestawu = 0;
+function randPreparations(iteration, orders,meal) { 
+  const mealPreparation = getPreparationsListForMeal(meal);
   mealPreparation.map(function(componentPreparation, index) {
-    //componentPreparation.push(iteration); //ID zestawu
     preparationsArray.push(componentPreparation);
   });
 }
 
 module.exports = {
-  preparations: function(orders) {
-    for (var i = 1; i <= config.PREPARATIONS_AMOUNT; i++) {
-      randPreparations(i, orders); // FIXME don't use global variables
+  preparations: function(orders,meals) {
+    
+	var MapMeals=[""];
+	meals.map(function (mealsElement) {
+		MapMeals.push(mealsElement[1]); 
+    });
+	idZestawu=1;
+	for (var i = 1; i < MapMeals.length; i++) {
+      randPreparations(i, orders, MapMeals[idZestawu]); // FIXME don't use global variables
 	  idZestawu++;
     }
     return preparationsArray;

@@ -30,8 +30,8 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
 
   const orderNumber = orderId % config.MAX_ORDER_NUMBER;  // TODO change into small amounts of ORDER_NUMBER
 
-  var randRestaurantForeignId = orderId % (restaurants.length)
-  // if modulo was 0 forieign id will be random
+  var randRestaurantForeignId = utils.randomIntFromInterval(1, restaurants.length);
+  // if modulo was 0 forieign id will be random 
   if (randRestaurantForeignId === 0) {
     randRestaurantForeignId = getRestaurantId();
   }
@@ -42,7 +42,6 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
 module.exports = {
   orders: function (startPeriodDate, endPeriodDate) {
     const ordersArray = [];
-    ordersArray.push(["id", "Data_Zamowienia", "Data_Odebrania", "Numer_zamowienia", "Id_restauracji"])
     for (var i = 1; i < config.ORDERS_AMOUNT; i++) {
       const order = randOrders(i, startPeriodDate, endPeriodDate);
       ordersArray.push(order);

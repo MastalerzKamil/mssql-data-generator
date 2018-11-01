@@ -1,6 +1,5 @@
 module.exports = {
   products: [
-    ["Produkty"],
     ["frytki"],
     ["salata"],
     ["bulka"],

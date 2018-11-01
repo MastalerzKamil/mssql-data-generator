@@ -11,7 +11,7 @@ const mealsNames = [
   "Woda",
   "Hamburger",
   "Salatka",
-  "Kubelek classic"
+  "KubelekClassic"
 ];
 
 // orderId = random index between 1 and length-1 we have implemented header
@@ -19,32 +19,28 @@ function getOrderId(orders) {
   return utils.randomIntFromInterval(1, orders.length - 1);
 }
 
-function randMeals(mealId, orders) {
-  const mealAmount = utils.randomIntFromInterval(1, 15);
-  var foreignOrderId = mealId % orders.length;
+function randMeals(mealId, orders,OrderId) {
+  const mealAmount = utils.randomIntFromInterval(1, 5);
   var randMealNameIndex = mealId % mealsNames.length;
 
   if (randMealNameIndex === 0) {
     randMealNameIndex = utils.randomIntFromInterval(0, mealsNames.length - 1);
   }
   const mealName = mealsNames[randMealNameIndex];
-  if (foreignOrderId === 0) foreignOrderId = getOrderId(orders);
-  return [mealId, mealName, mealAmount, "", foreignOrderId];
+  return [mealId, mealName, mealAmount, "", OrderId];
 }
 
 module.exports = {
   meals: function(orders) {
     const mealsArray = [];
-    mealsArray.push([
-      "Id",
-      "Nazwa_zamowienia",
-      "Ilosc",
-      "Uwagi",
-      "Id zamowienia"
-    ]);
-    for (var i = 1; i <= config.MEALS_AMOUNT; i++) {
-      const meal = randMeals(i, orders);
-      mealsArray.push(meal);
+	var mealID=0;
+    for (var i = 1; i <= orders.length; i++) {
+		var randAmount = utils.randomIntFromInterval(1, 4);
+		for(var j=0;j<randAmount;j++){
+			mealID++;
+			const meal = randMeals(mealID, orders,i);
+			mealsArray.push(meal);
+		}
     }
     return mealsArray;
   }
