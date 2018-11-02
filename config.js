@@ -14,7 +14,7 @@ module.exports = {
     .format(),
 	
 startT1: moment("2018-01-01 08:00:00", "YYYY-MM-DD HH:mm:ss"),
-stopT1: moment("2018-01-03 08:00:00", "YYYY-MM-DD HH:mm:ss"),
+stopT1: moment("2018-01-02 08:00:00", "YYYY-MM-DD HH:mm:ss"),
 
   t1OrdersPath: "generated-data/t1/ordersT1.csv",
   t1ComplaintsPath: "generated-data/t1/complatintsT1.csv",
@@ -24,7 +24,7 @@ stopT1: moment("2018-01-03 08:00:00", "YYYY-MM-DD HH:mm:ss"),
   t1WorkPath: "generated-data/outsite-resources-t1/workT1.csv",
   t1SurveyPath: "generated-data/outsite-resources-t1/surveyT1.csv",
   RESTAURANTS_AMOUNT: 2,
-  ORDERS_AMOUNT: 10,
+  ORDERS_AMOUNT: 30,
   MAX_ORDER_TIME: 480, // max 8 minutes waiting for meal
   MIN_ORDER_TIME: 1, // min waitnig time
   MAX_ORDER_NUMBER: 1000,

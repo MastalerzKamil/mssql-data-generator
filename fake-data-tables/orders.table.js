@@ -17,7 +17,7 @@ function getRestaurantId() {
 }
 
 function formatTime(time){
-	var time=moment(time, "YYYY-MM-DD HH:mm:ss").format("YYYY-MM-DD, HH:mm:ss");
+	var time=moment(time, "YYYY-MM-DD HH:mm:ss").format("YYYY-MM-DD,HH:mm:ss");
 	return time;
 }
 
