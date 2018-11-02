@@ -3,27 +3,60 @@ const utils = require("./../utils");
 const faker = require("faker");
 const moment = require("moment");
 
-function randWork(workerId, startPeriod, endPeriod) {
-  var randomedWorkerId = workerId % config.WORKERS_AMOUNT;
+const workers = [
+  "smazenie",
+  "pakowanie",
+  "krojenie",
+  "mycie",
+  "nalewanie"
+];
 
-  if (randomedWorkerId === 0) {
-    randomedWorkerId = utils.randomIntFromInterval(1, config.WORKERS_AMOUNT);
-  }
-  var startWork = faker.date.between(startPeriod, endPeriod)
-  startWork = moment(startWork).utcOffset("+0000").format();
-  var endWork = faker.date.between(startWork, endPeriod)
-  endWork = moment(endWork).utcOffset("+0000").format();
-  return [randomedWorkerId, startWork, endWork];
+function formatTime(time){
+	var time=moment(time, "MM-DD-YYYY HH:mm:ss").format("MM-DD-YYYY, HH:mm:ss");
+	return time;
 }
 
+function findWorked(id){
+	for(var i=0;i<worked.length;i++){
+		if(id == worked[i]){
+		id++;
+		return findWorked(id%(config.WORKERS_AMOUNT));
+		}
+	}
+	worked.push(id);
+	return id;
+}
+function randWork(position, startWork, endWork) {
+  
+  var randomedWorkerId = utils.randomIntFromInterval(1, config.WORKERS_AMOUNT);
+ 	randomedWorkerId=findWorked(randomedWorkerId);
+  return [randomedWorkerId, formatTime(startWork), formatTime(endWork),workers[position]];
+}
+
+
+var worked = [0];
+
 module.exports = {
-  works: function (startPeriod, endPeriod) {
+  works: function () {
     const worksArray = [];
-    worksArray.push(["id_pracownika", "poczatek_zmiany", "koniec_zmiany"]);
-    for (var i = 1; i <= config.WORKS_AMOUNT; i++) {
-      const work = randWork(i, startPeriod, endPeriod);
-      worksArray.push(work);
-    }
+	
+	var startWork = new moment(config.startT1);
+	const endWork = new moment(config.startT1);
+	startWork.toDate();
+	endWork.toDate();
+	endWork.add(8,'hours');
+	worked = [];
+	for (var i = 0; i < 2; i++) { 
+		for (var j = 0; j < workers.length; j++) { 
+		var amount=utils.randomIntFromInterval(1, 3);
+		  for (var k = 0; k < amount; k++){
+			const work = randWork(j, startWork, endWork);
+			worksArray.push(work);
+		  }
+		}
+		startWork = moment(endWork);
+		endWork.add(8,'hours');
+	}
     return worksArray;
   }
 }

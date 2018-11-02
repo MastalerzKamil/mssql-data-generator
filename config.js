@@ -2,38 +2,31 @@ const moment = require("moment");
 
 module.exports = {
   brandStart: moment()
-    .subtract(2, "months")
+    .subtract(1, "days")//(2, "months")
     .utcOffset("+0000")
     .format(),
   T1: moment()
     .utcOffset("+0000")
     .format(),
   T2: moment()
-    .subtract(7, "days")
+    .subtract(1, "days")
     .utcOffset("+0000")
     .format(),
-  t1RestaurantsPath: "generated-data/t1/restaurantsT1.csv",
-  t2RestaurantsPath: "generated-data/t2/restaurantsT2.csv",
+	
+startT1: moment("01-01-2018 08:00:00", "MM-DD-YYYY HH:mm:ss"),
+
   t1OrdersPath: "generated-data/t1/ordersT1.csv",
-  t2OrdersPath: "generated-data/t2/ordersT2.csv",
   t1ComplaintsPath: "generated-data/t1/complatintsT1.csv",
-  t2ComplaintsPath: "generated-data/t2/complatintsT2.csv",
   t1MealsPath: "generated-data/t1/mealsT1.csv",
-  t2MealsPath: "generated-data/t2/mealsT2.csv",
   t1PreparationsPath: "generated-data/t1/preparationsT1.csv",
-  t2PreparationsPath: "generated-data/t2/preparationsT2.csv",
   t1ProductsPath: "generated-data/t1/productsT1.csv",
-  t2ProductsPath: "generated-data/t2/productsT2.csv",
   t1WorkPath: "generated-data/outsite-resources-t1/workT1.csv",
-  t2WorkPath: "generated-data/outsite-resources-t2/workT2.csv",
   t1SurveyPath: "generated-data/outsite-resources-t1/surveyT1.csv",
-  t2SurveyPath: "generated-data/outsite-resources-t2/surveyT2.csv",
   RESTAURANTS_AMOUNT: 2,
   ORDERS_AMOUNT: 15,
   MAX_ORDER_TIME: 480, // max 8 minutes waiting for meal
   MIN_ORDER_TIME: 1, // min waitnig time
   MAX_ORDER_NUMBER: 1000,
-  WORKERS_AMOUNT: 20,
-  WORKS_AMOUNT: 2000,
+  WORKERS_AMOUNT: 45,
   SURVEYS_AMOUNT: 5
 };

@@ -15,7 +15,6 @@ function randSurvey(startPeriod, endPeriod) {
 module.exports = {
   surveys: function (startPeriod, endPeriod) {
     const surveysArray = [];
-    surveysArray.push(["ocena", "data"]);
     for (var i = 1; i <= config.SURVEYS_AMOUNT; i++) {
       const survey = randSurvey(startPeriod, endPeriod);
       surveysArray.push(survey);
