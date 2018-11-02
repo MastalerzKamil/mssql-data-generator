@@ -33,16 +33,16 @@ CREATE TABLE PRODUKTY
 
 CREATE TABLE PRZYGOTOWANIA
 (
-	Czas time NOT NULL,
-	ID INT IDENTITY(1,1) Primary key,
+	ID_zestawu INT REFERENCES ZESTAWY NOT NULL,
+	Nazwa_produktu VARCHAR (50) REFERENCES PRODUKTY NOT NULL,
 	Rodzaj VARCHAR (30)
 		CHECK(Rodzaj IN ('smazenie','pieczenie', 'grillowanie', 'pakowania', 'krojenie', 'skladania', 
 		'panierowanie', 'nakladanie', 'nalewanie')) NOT NULL,
+	Czas time NOT NULL,
 	Stanowisko VARCHAR (50)
 		CHECK(Stanowisko IN ('Uczacy sie', 'Kasjer', 'Kucharz', 'Serwis', 'Pakowacz'))
 		NOT NULL,
-	ID_zestawu INT REFERENCES ZESTAWY NOT NULL,
-	Nazwa VARCHAR (50) REFERENCES PRODUKTY NOT NULL
+	ID_przygotowania INT IDENTITY(1,1) Primary key,
 );
 
 CREATE TABLE REKLAMACJE

@@ -12,7 +12,7 @@ const workers = [
 ];
 
 function formatTime(time){
-	var time=moment(time, "MM-DD-YYYY HH:mm:ss").format("MM-DD-YYYY, HH:mm:ss");
+	var time=moment(time, "YYYY-MM-DD HH:mm:ss").format("YYYY-MM-DD, HH:mm:ss");
 	return time;
 }
 

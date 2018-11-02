@@ -16,16 +16,17 @@ function getRestaurantId() {
   return utils.randomIntFromInterval(1, config.ORDERS_AMOUNT - 1);
 }
 
+function formatTime(time){
+	var time=moment(time, "YYYY-MM-DD HH:mm:ss").format("YYYY-MM-DD, HH:mm:ss");
+	return time;
+}
+
 // generating record to Orders Table
-function randOrders(orderId, startPeriodDate, endPeriodDate) {
-  var startOrderDate = faker.date.between(startPeriodDate, endPeriodDate);
-  // we need timestamp to generate finish order date
-  const startOrderTimestamp = convertDateToTimestamp(startOrderDate);
-  const waitingTime = utils.randomIntFromInterval(config.MIN_ORDER_TIME, config.MAX_ORDER_TIME);
-  const finishOrderTimestamp = startOrderTimestamp + waitingTime;
-  // changing Date format to timestamp
-  startOrderDate = moment.unix(startOrderTimestamp).utcOffset("+0000").format();
-  const finishOrderDate = moment.unix(finishOrderTimestamp).utcOffset('+0000').format();
+function randOrders(orderId, startO) {
+    const waitingTime = utils.randomIntFromInterval(config.MIN_ORDER_TIME, config.MAX_ORDER_TIME);
+	
+  var endO = new moment(startO);
+  endO.add(waitingTime,'seconds');
 
   const orderNumber = orderId % config.MAX_ORDER_NUMBER;  // TODO change into small amounts of ORDER_NUMBER
 
@@ -35,16 +36,27 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
     randRestaurantForeignId = getRestaurantId();
   }
 
-  return [orderId, startOrderDate, finishOrderDate, orderNumber, randRestaurantForeignId];
+  return [orderId, formatTime(startO), formatTime(endO), orderNumber, randRestaurantForeignId];
 }
 
 module.exports = {
-  orders: function (startPeriodDate, endPeriodDate) {
+  orders: function ( startPeriodDate, endPeriodDate) {
     const ordersArray = [];
-    for (var i = 1; i < config.ORDERS_AMOUNT; i++) {
-      const order = randOrders(i, startPeriodDate, endPeriodDate);
-      ordersArray.push(order);
-    }
+	var start = new moment(config.startT1);
+	var end = new moment(config.stopT1);
+		do
+		{
+			for (var i = 1; i < config.ORDERS_AMOUNT; i++) {
+			const order = randOrders(i, start);
+			ordersArray.push(order);
+			const waitingTime = utils.randomIntFromInterval(config.MIN_ORDER_TIME, config.MAX_ORDER_TIME);
+			start.add(waitingTime,'seconds');
+			}
+			start.toDate();
+			start.add(1,'days');
+			console.log("while");
+		}
+		while(!(start.month()-end.month()==0 && start.day()-end.day()==0 && start.year()-end.year()==0))
     return ordersArray;
   }
 }
