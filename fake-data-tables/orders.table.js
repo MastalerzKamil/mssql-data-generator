@@ -1,6 +1,5 @@
 const faker = require("faker");
 const moment = require("moment");
-const restaurants = require("./restaurants.table").restaurants;
 const utils = require("./../utils");
 const config = require("./../config");
 
@@ -14,7 +13,7 @@ function convertDateToTimestamp(strDate) {
 
 // restaurantId = random index between 1 and length-1 we have implemented header
 function getRestaurantId() {
-  return utils.randomIntFromInterval(1, restaurants.length - 1);
+  return utils.randomIntFromInterval(1, config.ORDERS_AMOUNT - 1);
 }
 
 // generating record to Orders Table
@@ -30,8 +29,8 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
 
   const orderNumber = orderId % config.MAX_ORDER_NUMBER;  // TODO change into small amounts of ORDER_NUMBER
 
-  var randRestaurantForeignId = orderId % (restaurants.length)
-  // if modulo was 0 forieign id will be random
+  var randRestaurantForeignId = utils.randomIntFromInterval(1, config.ORDERS_AMOUNT);
+  // if modulo was 0 forieign id will be random 
   if (randRestaurantForeignId === 0) {
     randRestaurantForeignId = getRestaurantId();
   }
@@ -42,7 +41,6 @@ function randOrders(orderId, startPeriodDate, endPeriodDate) {
 module.exports = {
   orders: function (startPeriodDate, endPeriodDate) {
     const ordersArray = [];
-    ordersArray.push(["id", "Data_Zamowienia", "Data_Odebrania", "Numer_zamowienia", "Id_restauracji"])
     for (var i = 1; i < config.ORDERS_AMOUNT; i++) {
       const order = randOrders(i, startPeriodDate, endPeriodDate);
       ordersArray.push(order);

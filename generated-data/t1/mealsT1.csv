@@ -1,11 +1,32 @@
-Id,Ilosc,Uwagi,Id zamowienia
-1,Frytki,7,,1
-2,Cola,14,,2
-3,Woda,6,,3
-4,Hamburger,13,,4
-5,Salatka,7,,5
-6,Kubelek classic,9,,6
-7,Kubelek classic,12,,7
-8,Frytki,3,,8
-9,Cola,1,,9
-10,Woda,7,,2
+1,Cola,5,,1
+2,Woda,1,,2
+3,Frytki,3,,3
+4,Frytki,2,,3
+5,Cola,1,,3
+6,Woda,3,,4
+7,Woda,4,,4
+8,KubelekClassic,3,,4
+9,Hamburger,3,,4
+10,Woda,4,,5
+11,Frytki,5,,5
+12,Hamburger,3,,5
+13,Hamburger,5,,5
+14,Frytki,1,,6
+15,Salatka,5,,6
+16,BigMac,1,,7
+17,Frytki,1,,7
+18,KubelekClassic,4,,7
+19,Frytki,1,,8
+20,Hamburger,1,,8
+21,Frytki,4,,9
+22,Cola,1,,9
+23,Frytki,5,,9
+24,Woda,5,,9
+25,Woda,4,,10
+26,Cola,4,,11
+27,Woda,4,,12
+28,Hamburger,5,,12
+29,Cola,2,,12
+30,Salatka,5,,13
+31,KubelekClassic,5,,13
+32,Hamburger,3,,14
