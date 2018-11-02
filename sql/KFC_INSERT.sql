@@ -3,7 +3,7 @@ FROM 'C:\Users\Karolina\Desktop\HD\mssql-data-generator\generated-data\t1\orders
 	WITH
 	(
 		FIELDTERMINATOR = ',',
-		ROWTERMINATOR = '\r\n' 
+		ROWTERMINATOR = '0x0a'
 	)
 ALTER TABLE ZAMOWIENIA DROP COLUMN Data_odebrania;
 
@@ -15,7 +15,7 @@ FROM 'C:\Users\Karolina\Desktop\HD\mssql-data-generator\generated-data\t1\restau
 	WITH
 	(
 		FIELDTERMINATOR = ',',
-		ROWTERMINATOR = '\n'
+		ROWTERMINATOR = '0x0a'
 	)
 
 select * from RESTAURACJE
@@ -26,20 +26,18 @@ FROM 'C:\Users\Karolina\Desktop\HD\mssql-data-generator\generated-data\t1\produc
 	WITH
 	(
 		FIELDTERMINATOR = ',',
-		ROWTERMINATOR = '\n'
+		ROWTERMINATOR = '0x0a'
 	)
 
 select * from PRODUKTY
 
-/*~~~~~~~~
-
-TE NIE DZIALJA*/
+/*~~~~~~~~*/
 BULK INSERT ZESTAWY
 FROM 'C:\Users\Karolina\Desktop\HD\mssql-data-generator\generated-data\t1\mealsT1.csv'
 	WITH
 	(
 		FIELDTERMINATOR = ',',
-		ROWTERMINATOR = '\n'
+		ROWTERMINATOR = '0x0a'
 	)
 
 select * from ZESTAWY
@@ -49,7 +47,7 @@ FROM 'C:\Users\Karolina\Desktop\HD\mssql-data-generator\generated-data\t1\compla
 	WITH
 	(
 		FIELDTERMINATOR = ',',
-		ROWTERMINATOR = '\n'
+		ROWTERMINATOR = '0x0a'
 	)
 
 select * from REKLAMACJE
@@ -59,7 +57,7 @@ FROM 'C:\Users\Karolina\Desktop\HD\mssql-data-generator\generated-data\t1\prepar
 	WITH
 	(
 		FIELDTERMINATOR = ',',
-		ROWTERMINATOR = '\n'
+		ROWTERMINATOR = '0x0a'
 	)
 
 select * from PRZYGOTOWANIA
