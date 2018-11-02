@@ -42,19 +42,20 @@ function randOrders(orderId, startO) {
 module.exports = {
   orders: function ( startPeriodDate, endPeriodDate) {
     const ordersArray = [];
+	var Id=1;
 	var start = new moment(config.startT1);
 	var end = new moment(config.stopT1);
 		do
 		{
 			for (var i = 1; i < config.ORDERS_AMOUNT; i++) {
-			const order = randOrders(i, start);
+			const order = randOrders(Id, start);
 			ordersArray.push(order);
+			Id++;
 			const waitingTime = utils.randomIntFromInterval(config.MIN_ORDER_TIME, config.MAX_ORDER_TIME);
 			start.add(waitingTime,'seconds');
 			}
 			start.toDate();
 			start.add(1,'days');
-			console.log("while");
 		}
 		while(!(start.month()-end.month()==0 && start.day()-end.day()==0 && start.year()-end.year()==0))
     return ordersArray;

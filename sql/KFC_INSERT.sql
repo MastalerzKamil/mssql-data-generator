@@ -3,7 +3,7 @@ FROM 'C:\Users\Karolina\Desktop\HD\mssql-data-generator\generated-data\t1\orders
 	WITH
 	(
 		FIELDTERMINATOR = ',',
-		ROWTERMINATOR = '\n' 
+		ROWTERMINATOR = '\r\n' 
 	)
 ALTER TABLE ZAMOWIENIA DROP COLUMN Data_odebrania;
 
